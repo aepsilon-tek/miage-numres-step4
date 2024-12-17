@@ -73,6 +73,9 @@ Nous utiliserons Vite durant ce TP pour facilité l'expérience de Devellopement
 7. Faite le Quizz !
 
 # Accessibilité
+Les utilisateurs ayant des besoins particuliers vont utiliser des outils d'accessibilité, comme un liseur d'écran, ne pas utiliser de souris, et autres.
+L'accessibilité est l'ensemble des techniques que l'on peut mettre en place pour leur permettre d'utiliser l'Application sans problèmes.
+
 
 ### Lighthouse
 Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe (vu en cour), un outil permettant d'évaluer jusqu'à un certain point l'accessibilité de votre site web.
@@ -84,6 +87,17 @@ Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe
 5. Répondre à la question Q1 du fichier **_Questions.md_**
 8. Commiter  & Pusher le fichier **_Questions.md_**
 
+### Contraste
+Certain utilisateur ont des particularité visuel qui ne leur permet pas de voir certain texte si le contraste avec le fond n'est pas bon.
+Il existe deux notations de contraste : AA et AAA.
+Tout ce qui est en dessous de la notation AA n'est pas considérer comme étant accessible.
+
+
+1. Ouvrir la console développer (click droit sur un texte à tester -> inspecter)
+4. Dans le side menu qui apparait, clicker sur la couleur, ensuite clicker sur "Rapport de contraste"
+5. Répondre à la question Q2, Q3 et Q4 du fichier **_Questions.md_**
+4. Faites en sorte que la valeur de Rapport de contraste soit > AAA
+8. Commiter  & Pusher le fichier **_Questions.md_**
 
 
 
