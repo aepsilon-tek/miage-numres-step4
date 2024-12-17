@@ -124,8 +124,9 @@ Sémantique signifie "en relation avec le sens". Écrire du code HTML sémantiqu
 
 Les éléments Sémantique HTML embarque avec eux des ARIA role et propriété. Il faut donc les utiliser au maximum.
 
-Le <h1> est un élément sémantique qui désigne le titre de la page.
-Il existe plusieurs régles pour bien utiliser ces éléments, il faut par exemple n'avoir qu'un seul <h1> par page, ne pas avoir un <hx> imbriqué dans un <hx+> par exemple : 
+Le ```<h1>``` est un élément sémantique qui désigne le titre de la page.
+Il existe plusieurs régles pour bien utiliser ces éléments, il faut par exemple n'avoir qu'un seul ```<h1>``` par page, ne pas avoir un ```<hx>``` imbriqué dans un ```<hx-1>``` par exemple : 
+
 ```
 <h3> bonjour </h3>  <h2> Toi </h2> 
 ```
@@ -133,7 +134,7 @@ Il existe plusieurs régles pour bien utiliser ces éléments, il faut par exemp
 1. épondre à la question Q7 du fichier **_Questions.md_**
 1. Aller dans le fichier `front/src/main.js`
 5. Reprenez le code HTML pour utiliser les éléments sémantiques.
-  1. Liste d'éléments pertinents : <header>, <footer>, <section>...
+   1. Liste d'éléments pertinents : ```<header>, <footer>, <section>...```
 5. Répondre à la question Q8 du fichier **_Questions.md_**
 8. Commiter & Pusher le fichier **_Questions.md_**
 
