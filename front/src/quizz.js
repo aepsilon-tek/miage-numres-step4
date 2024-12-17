@@ -7,7 +7,7 @@ export let score;
 let questionElement;
 let proposalsElement;
 
-export function initQuizz(questions) {
+export async function initQuizz(questions) {
   quizzData = [];
   localStorage.clear();
   
@@ -17,10 +17,7 @@ export function initQuizz(questions) {
   currentQuestion = 0;
   score = 0;
 
-  showQuestion();
-}
   
-async function showQuestion() {
   quizzData = await getQuestionsApi();
     
   for (let i = 0; i < quizzData.length; i++) {
@@ -28,6 +25,10 @@ async function showQuestion() {
     quizzData[i].proposals = proposals;
   }
 
+  showQuestion();
+}
+  
+async function showQuestion() {
   const question = quizzData[currentQuestion];
   questionElement.innerText = question.label
   
@@ -44,20 +45,13 @@ async function selectAnswer(e) {
   const selectedButton = e.target;
   let proposals = quizzData[currentQuestion].proposals;
 
-  let chosedProposal = [];
   for (let i = 0; i < proposals.length; i++) {
-      
     if (selectedButton.innerText === proposals[i].label) {
-      chosedProposal.push(proposals[i]);
+      saveAnswer(proposals[i])
     }
   }
 
-  let point = await evaluate(chosedProposal);
-
-  score = score + point;
-  
   currentQuestion++;
-  
   if (currentQuestion < quizzData.length) {
     showQuestion();
   } else {
@@ -66,6 +60,8 @@ async function selectAnswer(e) {
 }
   
 async function showResult() {
+  score = await evaluate(chosedProposal);
+
   quiz.innerHTML = `
     <h1>Quizz Finis!</h1>
     <p>Ton score: ${score}/${quizzData.length}</p>
