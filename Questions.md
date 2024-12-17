@@ -1,11 +1,20 @@
-# Q1: Ajouter le screen de votre score :
+# Q1: Comment sont les arguments que vous pouvez utiliser pour convaincre votre Client de rendre son quizz accessible ?
+Réponse:
+
+# Q2: Ajouter le screen de votre score :
 Screen:
 
-# Q2: Quel est la valeur du rapport de contraste actuel :
+# Q3: Est-ce que l'analyse de Lighthouse est suffisate pour évaluer l'Accessibilité de votre Application ?
 Réponse:
 
-# Q3: Quel est la valeur du score AA :
+# Q4: Quel est la valeur du rapport de contraste actuel :
 Réponse:
 
-# Q4: Quel est la valeur du score AAA :
+# Q5: Quel est la valeur du score AA :
+Réponse:
+
+# Q6: Quel est la valeur du score AAA :
+Réponse:
+
+# Q7: Comment pouvez vous changer la valeur du contraste de votre Application ?
 Réponse:

@@ -60,7 +60,10 @@ async function selectAnswer(e) {
 }
   
 async function showResult() {
-  score = await evaluate(chosedProposal);
+  let answers = getAnswers();
+  answers = answers.forEach(function(a){ delete a.label });
+
+  score = await evaluate(answers);
 
   quiz.innerHTML = `
     <h1>Quizz Finis!</h1>

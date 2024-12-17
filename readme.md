@@ -22,14 +22,15 @@ L'architecture générale de  l'application  Burger Quizz est la suivante :
 
 Une application web consomme une API Rest Quarkus  qui s'appuie sur une base de données relationnelles en  mémoire **H2**.
 
-## TP3 - Choix stack Front-End
+## TP4 - Accessibilité
 
-Votre client  veut une api de quizz en français qui :
+Votre client veut une application accessible pour des raison sociales mais aussi légale.
 * Permet à un utilisateur de passer le quizz.
 * Indique le score du joueur à la fin du quizz.
-* Met en avant tout ces réseaux sociaux.
+* Met en avant tous ces réseaux sociaux.
 * Une page "About".
-* Une image fix avec un "?"
+* Une image fix avec un "?".
+* Affiche le score du joueur à la fin du quizz.
 
 **L'objectif de ce quatrième TP est de rendre l'Application Accessible**
 
@@ -62,20 +63,28 @@ Nous utiliserons Vite durant ce TP pour facilité l'expérience de Devellopement
 
 # Connecter l'api et le front
 
-1. Retourner à la racine du projet :  `cd /workspace/miage-numres-step4/`
-2. Lancer l'api : `./mvnw quarkus:dev -pl api`
-3. Clicker sur "make public"
-5. Dans VS Code : 
-    1. Aller dans l'onglet PORTS
-    2. Copier l'Address qui commence par `https://8080...`
-5. Dans le fichier store.js `front/light-stack/src/store.js`
-    1. Modifier la ligne : `export const baseUrl = "https://url.api";` par l'url que vous venez de copier`export const baseUrl = "https://8080...";`
+1. Ouvrir deux terminaux.
+1. Terminal 1 :
+   1. Retourner à la racine du projet :  `cd /workspace/miage-numres-step4/`
+   2. Aller dans le la partie front : `cd front`
+   3. Installer les dépendances : `npm install`
+   3. Lancer l'application Front en mode dev : `npm run dev`
+1. Terminal 2 :
+   1. Retourner à la racine du projet :  `cd /workspace/miage-numres-step4/`
+   2. Lancer l'api : `./mvnw quarkus:dev -pl api`
+   3. Clicker sur "make public"
+   5. Dans VS Code : 
+       1. Aller dans l'onglet PORTS
+       2. Copier l'Address qui commence par `https://8080...`
+   5. Dans le fichier store.js `front/light-stack/src/store.js`
+       1. Modifier la ligne : `export const baseUrl = "https://url.api";` par l'url que vous venez de copier`export const baseUrl = "https://8080...";`
 7. Faite le Quizz !
 
 # Accessibilité
-Les utilisateurs ayant des besoins particuliers vont utiliser des outils d'accessibilité, comme un liseur d'écran, ne pas utiliser de souris, et autres.
+Les utilisateurs ayant des besoins particuliers vont utiliser des outils d'accessibilité, comme un liseur d'écran (screen reader), ne pas utiliser de souris, et autres.
 L'accessibilité est l'ensemble des techniques que l'on peut mettre en place pour leur permettre d'utiliser l'Application sans problèmes.
 
+5. Répondre à la question Q1 du fichier **_Questions.md_**
 
 ### Lighthouse
 Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe (vu en cour), un outil permettant d'évaluer jusqu'à un certain point l'accessibilité de votre site web.
@@ -84,7 +93,8 @@ Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe
 2. Aller dans Lighthouse
 3. Choisir Navigation, Bureau, Accessibilité
 4. Lance l'analyse
-5. Répondre à la question Q1 du fichier **_Questions.md_**
+5. Répondre à la question Q2 du fichier **_Questions.md_**
+5. Répondre à la question Q3 du fichier **_Questions.md_**
 8. Commiter  & Pusher le fichier **_Questions.md_**
 
 ### Contraste
@@ -95,9 +105,9 @@ Tout ce qui est en dessous de la notation AA n'est pas considérer comme étant 
 
 1. Ouvrir la console développer (click droit sur un texte à tester -> inspecter)
 4. Dans le side menu qui apparait, clicker sur la couleur, ensuite clicker sur "Rapport de contraste"
-5. Répondre à la question Q2, Q3 et Q4 du fichier **_Questions.md_**
+5. Répondre à la question Q4, Q5, Q6 et Q7 du fichier **_Questions.md_**
 4. Faites en sorte que la valeur de Rapport de contraste soit > AAA
-8. Commiter  & Pusher le fichier **_Questions.md_**
+8. Commiter & Pusher le fichier **_Questions.md_**
 
 
 
