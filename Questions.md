@@ -1,10 +1,10 @@
-# Q1: Comment sont les arguments que vous pouvez utiliser pour convaincre votre Client de rendre son quizz accessible ?
+# Q1: Quels sont les arguments que vous pouvez utiliser pour convaincre votre Client de rendre son quizz accessible ? (Vous pouvez vous aider du cour)
 Réponse:
 
 # Q2: Ajouter le screen de votre score :
 Screen:
 
-# Q3: Est-ce que l'analyse de Lighthouse est suffisate pour évaluer l'Accessibilité de votre Application ?
+# Q3: Est-ce que l'analyse de Lighthouse est suffisante pour évaluer l'Accessibilité de votre Application ?
 Réponse:
 
 # Q4: Combien de fois vous devez utiliser une touche du clavier pour passer le quizz ?
@@ -22,35 +22,38 @@ Réponse:
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
 
-# Q9: Quel est la valeur du rapport de contraste actuel :
+# Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
 Réponse:
 
-# Q10: Quel est la valeur du score AA :
+# Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
 
-# Q11: Quel est la valeur du score AAA :
+# Q11: Quel est la valeur du score AA :
 Réponse:
 
-# Q12: Comment pouvez vous changer la valeur du contraste de votre Application ?
+# Q12: Quel est la valeur du score AAA :
 Réponse:
 
-# Q13: Ajouter le screen de votre score Lighthouse
+# Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
+Réponse:
+
+# Q14: Ajouter le screen de votre score Lighthouse
 Screen:
 
-# Q14: Êtes vous capable de déterminer ce qui est un lien ou pas visuellement avec chaque altérations ?
+# Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:
 
-# Q15: Ajouter le screen de votre score Lighthouse
+# Q16: Ajouter le screen de votre score Lighthouse
 Screen:
 
-# Q16:  Proposition 1
+# Q17:  Proposition 1
 Description:
 Nb d'actions gagnée : 
 
-# Q17:  Proposition 2
+# Q18:  Proposition 2
 Description:
 Nb d'actions gagnée : 
 
-# Q18:  Proposition 3
+# Q19:  Proposition 3
 Description:
 Nb d'actions gagnée : 
