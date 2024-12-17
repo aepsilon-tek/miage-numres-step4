@@ -26,7 +26,7 @@ values (8, 'Crocodile', 0, 2);
 
 -- Question 3 :
 Insert into Question (id, label)
-values (3, 'Quel animal est la couleur du cheval blanc d’Henri IV ?');
+values (3, 'Quelle est la couleur du cheval blanc d’Henri IV ?');
 
 Insert into Proposal (id, label, correct, QUESTION_ID)
 values (9, 'Rouge', 0, 3);
