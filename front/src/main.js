@@ -2,9 +2,9 @@ import { initQuizz } from './quizz.js';
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
-        <div class="header">
+        <div class="header" style="cursor:pointer;">
           <h1>My Quizz</h1>
-          Pour accéder a la page /about <a href="about/">click ici</a>
+          Pour accéder a la page /about <a href="about/" style="text-decoration: none;">click ici</a>
         </div>
 
 
@@ -37,7 +37,7 @@ document.querySelector('#app').innerHTML = `
               <h1>Nom étudiant</h1>
               <h5>description</h5>
               <div id="quiz">
-                <h1>A TOI DE JOUER</h1>
+                <h2>A TOI DE JOUER</h2>
                 <div id="question"></div>
                 <div id="proposals"></div>
               </div>

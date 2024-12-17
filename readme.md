@@ -86,7 +86,7 @@ L'accessibilité est l'ensemble des techniques que l'on peut mettre en place pou
 
 5. Répondre à la question Q1 du fichier **_Questions.md_**
 
-### Lighthouse
+### Test de l'Accessibilité
 Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe (vu en cour), un outil permettant d'évaluer jusqu'à un certain point l'accessibilité de votre site web.
 
 1. Ouvrir la console développer (click droit -> inspecter)
@@ -95,20 +95,105 @@ Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe
 4. Lance l'analyse
 5. Répondre à la question Q2 du fichier **_Questions.md_**
 5. Répondre à la question Q3 du fichier **_Questions.md_**
+4. Passer le Quizz sans utiliser la souris.
+5. Répondre à la question Q4 du fichier **_Questions.md_**
 8. Commiter  & Pusher le fichier **_Questions.md_**
+
+### Arbre d'arboresence d'Accessibilité
+Les navigateurs convertissent le balisage en une représentation interne appelée arbre DOM. Le DOM contient un objet pour chaque balise, attribut et noeud de texte. Les navigateurs créent ensuite un arbre d'accessibilité basé sur l'arbre DOM, celui-ci est utilisé par les technologies d'assistance telles que les lecteurs d'écran via des APIs spécifiques à une plateforme.
+
+Sous Chrome : 
+1. Ouvrir la console développer (click droit sur un texte à tester -> inspecter)
+4. Dans le side menu qui apparait à droite, sous l'onglet Styles, clicker sur la Accessibilité, coché sur "Activer l’arborescence d’accessibilité de la page entière"
+1. Recharger la console développer
+4. Dans le side menu qui apparait à gauche un icone d'accessibilité devrait appaitre, si vous clickez dessus vous pourrait voir l'arbre d'Accessibilité
+
+### ARIA
+Accessible Rich Internet Applications (ARIA) (qu'on pourrait traduire par « applications internet riches et accessibles ») est un ensemble de rôles et d'attributs d'attributs qui définissent comment rendre le contenu et les applications web accessibles (notamment ceux développés avec JavaScript) pour les personnes avec des handicaps.
+
+ARIA complète HTML afin que les éléments interactifs et les widgets puissent être utilisés par les outils d'assistance quand les fonctionnalités standard ne le permettent pas. Ainsi, ARIA permet de rendre accessible les widgets JavaScript, les indications dans les formulaires, les messages d'erreur et les mises à jour dynamiques du contenu, etc.
+
+Sous Chrome : 
+4. Ajouter les "alt" à toutes les images du site.
+5. Répondre à la question Q5, Q6 du fichier **_Questions.md_**
+8. Commiter & Pusher le fichier **_Questions.md_**
+
+
+### Semantic HTML
+Sémantique signifie "en relation avec le sens". Écrire du code HTML sémantique consiste à utiliser des éléments HTML pour structurer votre contenu en fonction de la signification de chaque élément, et non de son apparence.
+
+Les éléments Sémantique HTML embarque avec eux des ARIA role et propriété. Il faut donc les utiliser au maximum.
+
+Le <h1> est un élément sémantique qui désigne le titre de la page.
+Il existe plusieurs régles pour bien utiliser ces éléments, il faut par exemple n'avoir qu'un seul <h1> par page, ne pas avoir un <hx> imbriqué dans un <hx+> par exemple : 
+```
+<h3> bonjour </h3>  <h2> Toi </h2> 
+```
+
+1. épondre à la question Q7 du fichier **_Questions.md_**
+1. Aller dans le fichier `front/src/main.js`
+5. Reprenez le code HTML pour utiliser les éléments sémantiques.
+  1. Liste d'éléments pertinents : <header>, <footer>, <section>...
+5. Répondre à la question Q8 du fichier **_Questions.md_**
+8. Commiter & Pusher le fichier **_Questions.md_**
+
 
 ### Contraste
 Certain utilisateur ont des particularité visuel qui ne leur permet pas de voir certain texte si le contraste avec le fond n'est pas bon.
 Il existe deux notations de contraste : AA et AAA.
 Tout ce qui est en dessous de la notation AA n'est pas considérer comme étant accessible.
 
-
+Sous Chrome : 
 1. Ouvrir la console développer (click droit sur un texte à tester -> inspecter)
 4. Dans le side menu qui apparait, clicker sur la couleur, ensuite clicker sur "Rapport de contraste"
-5. Répondre à la question Q4, Q5, Q6 et Q7 du fichier **_Questions.md_**
+5. Répondre à la question Q9, Q10, Q11 et Q12 du fichier **_Questions.md_**
 4. Faites en sorte que la valeur de Rapport de contraste soit > AAA
+5. Répondre à la question Q13 du fichier **_Questions.md_**
+4. Vous êtes actuellement sur l'onglet "Elements" de la consol dévelloper, aller sur l'onglet "Rendu"
+4. Descendez en bas "Emuler les déficiences visuelles"
+4. Choississez vision floue, et toutes les autres déficiences.
+5. Répondre à la question Q14 du fichier **_Questions.md_**
 8. Commiter & Pusher le fichier **_Questions.md_**
 
+### Les liens
+Comme on viens de le voir certaines déficiences rendent difficile l'idendification des liens.
+Quelques bonne pratique permette de rendre les liens accessible :
+
+
+Sous Chrome : 
+1. Utiliser l'ARIA label pour les nommer
+2. Ne pas avoir de lien "click me", il faut plutot que le lien porte l'information de "vers où il emméne"
+3. Avoir une différenciation visuelle de ce qui est un lien ou ce qui ne l'est pas en dehors de sa couleur.
+4. Mettez à jour tous les liens du site.
+5. Répondre à la question Q15 du fichier **_Questions.md_**
+8. Commiter & Pusher le fichier **_Questions.md_**
+
+### Diriger les utilisateur au mieux
+L'objectif est qu'un Utilisateur puisse passer le quizz avec un minimum d'interaction clavier, donner 3 propositions pour arriver a diminuer ces actions.
+
+Vous pouvez par exemple utiliser le ARIA tabindex="0" pour obliger un screen reader à passer sur un élément à l'appuis de la touche tab ou inversement tabindex="-1" pour l'en empêcher.
+
+### ARIA live region
+Dans le passé, un changement dans une page web débouchait souvent sur une relecture intégrale, ce qui agaçait souvent l'utilisateur, ou au contraire très peu ou pas de lecture du tout, rendant inaccessible une partie, voire l'ensemble des informations. Jusqu'à récemment, les lecteurs d'écran n'étaient en mesure d'améliorer cela du fait de l'absence d'éléments standardisés pour prévenir le lecteur d'écran d'un changement. Les zones « live » ARIA comblent cette lacune et fournissent des solutions aux lecteurs d'écran afin de savoir si et comment interrompre l'utilisateur lors d'un changement.
+
+L'ajout de l'ARIA aria-live="assertive" sur un élément HTML permet de notifier le screen reader d'une modification et la lecture automatique de ce dernier.
+Vous pouvez aussi utiliser le code js : ``` document.getElementById("myButton").focus({ focusVisible: true }); ``` pour "focus" un élément html quand vous le souhaitez.
+
+Pour chacune des propositions que vous faites, vous devez :
+  1. Decrire la proposition dans le fichier **_Questions.md_**
+  1. Implementer votre proposition
+  1. Tester la proposition
+  1. Indiquez soit le gain en nombre d'actions.
+  1. Commiter & Pusher le code et le  fichier **_Questions.md_**
+
+### Proposition 1
+Suivez les étapes ci-desus et répondre à Q16  du fichier fichier **_Questions.md_**
+
+### Proposition 2
+Suivez les étapes ci-desus et répondre à Q17  du fichier fichier **_Questions.md_**
+
+### Proposition 3
+Suivez les étapes ci-desus et répondre à Q18  du fichier fichier **_Questions.md_**
 
 
 # Pull Request

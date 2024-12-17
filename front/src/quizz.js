@@ -61,9 +61,9 @@ async function selectAnswer(e) {
   
 async function showResult() {
   let answers = getAnswers();
-  answers = answers.forEach(function(a){ delete a.label });
+  const newAnswers = answers.map(({label, ...id}) => id)
 
-  score = await evaluate(answers);
+  score = await evaluate(newAnswers);
 
   quiz.innerHTML = `
     <h1>Quizz Finis!</h1>
