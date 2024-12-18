@@ -58,13 +58,13 @@ Nn
 Screen:
 ![alt text](image-5.png)
 # Q17:  Proposition 1
-Description:
-Nb d'actions gagnée : 
+Description:Utiliser des régions ARIA Live pour les questions et réponses dynamiques permet d'annoncer automatiquement un changement de contenu sans que l’utilisateur ait besoin d'interagir. Cela améliore la fluidité de l'expérience pour les utilisateurs utilisant des lecteurs d'écran.
+Nb d'actions gagnée : 5 actions par mise à jour du contenu (questions ou réponses).
 
 # Q18:  Proposition 2
-Description:
-Nb d'actions gagnée : 
+Description:Lorsque le quiz passe à la question suivante, le focus est automatiquement déplacé vers cette nouvelle question. Cela réduit le besoin pour l'utilisateur de naviguer manuellement et assure un parcours fluide pour les utilisateurs au clavier.
+Nb d'actions gagnée : 1 action par question (évite à l'utilisateur de tabuler pour retrouver la nouvelle question).
 
 # Q19:  Proposition 3
-Description:
-Nb d'actions gagnée : 
+Description:Implémenter un mode de navigation rapide qui masque temporairement les éléments non essentiels (comme les icônes de réseaux sociaux) lorsqu'un utilisateur utilise un lecteur d'écran ou navigue au clavier. Cela permet un accès direct aux fonctionnalités clés comme le bouton pour commencer le quiz, sans distraction.
+Nb d'actions gagnée :10 actions en évitant les éléments non prioritaires et en accélérant l'accès aux contenus importants. 

@@ -4,7 +4,7 @@ import './style.css';
 document.querySelector('#app').innerHTML = `
         <header class="header" style="cursor:pointer;" aria-label="En-tête du quizz">
           <h1>My Quizz</h1>
-          <p>Pour accéder à la page <a href="about/" style="text-decoration: none;" aria-label="Page À propos">cliquez ici</a></p>
+          <p>Pour accéder à la page <a href="about/" style="text-decoration: none; color: #ADD8E6;" aria-label="Page À propos">About</a></p>
         </header>
 
         <nav class="topnav" role="navigation" aria-label="Liens vers les réseaux sociaux">
