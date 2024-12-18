@@ -51,24 +51,28 @@ Réponse:
 
  Les modifications apportées concernent surtout la structure HTML et l'accessibilité, mais elles n'ont pas nécessairement amélioré les performances du site (temps de chargement, taille des ressources, etc.)
 
- 
+
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
-
+Le rapport de contraste est de 2.38
 # Q11: Quel est la valeur du score AA :
 Réponse:
+Pour obtenir un score AA, le rapport de contraste doit être au minimum de 4.5:1 pour les textes normaux et 3:1 pour les textes larges
 
 # Q12: Quel est la valeur du score AAA :
 Réponse:
-
+ Pour le contraste, la valeur minimale recommandée est de 7:1 pour le texte normal et 4.5:1 pour le texte large
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
 Réponse:
+En donnant une couleur plus éloignée dans le spectre des couleurs aux textes
 
 # Q14: Ajouter le screen de votre score Lighthouse
 Screen:
+![Image accessibilitémieuxMieux](./Acessibilitymieuxmieux.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:
+oui
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
