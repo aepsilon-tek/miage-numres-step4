@@ -19,18 +19,16 @@ Réponse:
 33
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
-
+Les propriétés ARIA enrichissent l’accessibilité des éléments, par exemple aria-label pour ajouter une description accessible, aria-hidden pour cacher un élément aux lecteurs d’écran, et aria-expanded pour indiquer si un élément interactif est déployé ou replié. Les rôles ARIA permettent de définir le comportement des éléments pour les technologies d’assistance, comme role="button" pour indiquer un bouton, role="alert" pour signaler des messages importants, et role="navigation" pour structurer une zone de navigation. 
 # Q6: Ajouter le screen de votre score Lighthouse
 Screen:
-
+![alt text](image-1.png)
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
 
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
 
-# Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
-Réponse:
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
