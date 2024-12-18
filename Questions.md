@@ -86,7 +86,7 @@ Réponse:
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
-
+La valeur actuelle du rapport de contraste est de 2,38, ce qui est insuffisant par rapport aux normes d'accessibilité (minimum 4,5:1 pour AA).
 # Q11: Quel est la valeur du score AA :
 Réponse:
 La valeur du score AA correspond à un rapport de contraste de 4.5:1 pour le texte normal et 3:1 pour le texte large.
@@ -102,15 +102,16 @@ Screen:
 ![alt text](image-3.png)
 Par exemple, au lieu d'utiliser la couleur gray, j'ai utilisé le code couleur #b5b5b5 pour obtenir un meilleur contraste.
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
-Réponse:
-Non, il devient difficile de déterminer visuellement ce qui est un lien ou non après avoir appliqué les altérations des déficiences visuelles. Par exemple :
+![alt text](image-4.png)
+Non, il est difficile de déterminer visuellement ce qui est un lien ou non après avoir appliqué chaque altération. Voici les observations pour chaque cas :
 
-Vision floue : Les textes et les icônes deviennent indistincts, rendant les liens peu visibles.
-Achromatopsie (absence de couleurs) : Sans la couleur pour différencier les liens, il est difficile de les distinguer du texte ordinaire.
-Daltonisme (Protanopie, Deutéranopie, Tritanopie) : Les liens qui se différencient uniquement par la couleur ne sont plus reconnaissables.
+Vision floue : Les liens deviennent indistincts et se confondent avec le texte ordinaire.
+Achromatopsie : Les couleurs ne sont plus visibles, donc les liens ne se démarquent pas s'ils ne sont pas soulignés.
+Daltonisme : Les différences de couleur entre les liens et le texte sont souvent perdues, rendant leur identification compliquée.
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
-
+![alt text](image-5.png)
+Le score de 100.
 # Q17:  Proposition 1
 Description:
 Nb d'actions gagnée : 
