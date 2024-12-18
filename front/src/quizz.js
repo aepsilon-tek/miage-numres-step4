@@ -30,17 +30,32 @@ export async function initQuizz(questions) {
   
 async function showQuestion() {
   const question = quizzData[currentQuestion];
-  questionElement.innerText = question.label
   
+  questionElement.innerText = question.label;
+  questionElement.setAttribute("tabindex", "1");
+  questionElement.focus();
+  
+  const externalLinks = document.querySelectorAll('a');
+  externalLinks.forEach(link => link.setAttribute("tabindex", "-1"));
+
   proposalsElement.innerHTML = "";
-  question.proposals.forEach(proposal => {
+  question.proposals.forEach((proposal, index) => {
     const button = document.createElement("button");
     button.innerText = proposal.label;
     button.setAttribute("aria-pressed", "false");
+    button.setAttribute("tabindex", `${index + 2}`);
     proposalsElement.appendChild(button);
-    button.setAttribute("aria-pressed", "true");
-    button.addEventListener("click", selectAnswer);
+
+    button.addEventListener("click", (e) => {
+      button.setAttribute("aria-pressed", "true");
+      selectAnswer(e);
+    });
   });
+
+  const firstButton = proposalsElement.querySelector("button");
+  if (firstButton) {
+    firstButton.focus();
+  }
 }
   
 async function selectAnswer(e) {
@@ -63,12 +78,17 @@ async function selectAnswer(e) {
   
 async function showResult() {
   let answers = getAnswers();
-  const newAnswers = answers.map(({label, ...id}) => id)
+  const newAnswers = answers.map(({ label, ...id }) => id);
 
   score = await evaluate(newAnswers);
 
   quiz.innerHTML = `
-    <h1>Quizz Finis!</h1>
+    <h1 id="result-heading" aria-live="assertive">Quizz Finis!</h1>
     <p>Ton score: ${score}/${quizzData.length}</p>
   `;
+
+  const externalLinks = document.querySelectorAll('a');
+  externalLinks.forEach(link => link.setAttribute("tabindex", "0"));
+
+  document.getElementById("result-heading").focus();
 }

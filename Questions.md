@@ -88,13 +88,9 @@ Screen:
 ![Image Q14](./Image3.png)
 
 # Q17:  Proposition 1
-Description:
-Nb d'actions gagnée : 
+Description de la proposition :
+L'objectif est d'utiliser l'attribut ARIA aria-live="assertive" sur un élément qui affiche le score à la fin du quiz. Cela permet de notifier automatiquement les utilisateurs utilisant un lecteur d'écran du changement du score sans qu'ils aient à naviguer manuellement ou effectuer des actions supplémentaires.
 
-# Q18:  Proposition 2
-Description:
-Nb d'actions gagnée : 
-
-# Q19:  Proposition 3
-Description:
-Nb d'actions gagnée : 
+Mise en œuvre :
+Dans le fichier quizz.js, la fonction showResult est modifiée pour inclure l'attribut aria-live="assertive" dans l'élément HTML affichant le résultat.
+Nb d'actions gagnées : 3.
