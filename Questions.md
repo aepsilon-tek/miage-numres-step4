@@ -98,14 +98,30 @@ Non, en appliquant les altérations de vision (vision floue, contraste réduit, 
 Screen:
 ![alt text](image-5.png)
 
-# Q17:  Proposition 1
-Description:
-Nb d'actions gagnée : 
+# Q17:  Proposition 1 : Utilisation de aria-live="polite" pour annoncer les nouvelles questions
 
-# Q18:  Proposition 2
-Description:
-Nb d'actions gagnée : 
+Description :
+Ajout de l’attribut aria-live="polite" à l’élément contenant les questions, permettant aux lecteurs d’écran d’annoncer automatiquement les nouvelles questions lorsqu’elles apparaissent. Cette amélioration réduit les interactions nécessaires pour les utilisateurs de technologies d’assistance, car :
 
-# Q19:  Proposition 3
+- Les utilisateurs n’ont plus besoin de naviguer jusqu’à l’élément pour entendre la question.
+- Les mises à jour de la question sont détectées et lues automatiquement.
+
+Nombre d'actions supprimées :
+1 à 2 actions par question, soit une économie totale de 10 à 20 actions sur un quizz de 10 questions.
+
+# Q18:  Proposition 2 :  Focus automatique sur la première réponse
 Description:
-Nb d'actions gagnée : 
+Ajout d’un focus automatique sur le premier bouton de réponse lors de l’affichage des propositions (implémenté dans la fonction focusFirstProposal). Cette fonctionnalité permet à l’utilisateur de valider directement la réponse en appuyant sur Entrée ou Espace, sans devoir tabuler manuellement jusqu’à la première réponse. Cela améliore l’expérience utilisateur, en particulier pour les utilisateurs au clavier ou avec des lecteurs d’écran.
+
+Nombre d'actions gagnées :
+1 action par question, soit une économie totale de 30 actions sur un quizz de 30 questions.
+
+# Q19:  Proposition 3 : Lecture automatique des questions par le Narrateur (ou autres lecteurs d’écran)
+Description:
+Ajout de la fonctionnalité permettant aux lecteurs d’écran (comme le Narrateur de Windows) de lire automatiquement les questions. Cette amélioration, inexistante auparavant, a été réalisée grâce à :
+
+L’ajout de aria-live="polite" sur l’élément contenant les questions, pour notifier les lecteurs d’écran des mises à jour.
+Une réinitialisation et réinsertion du texte des questions via innerText et un léger délai, pour forcer la détection du changement. Une temporisation de l’affichage des réponses via aria-hidden="true", afin de garantir que les questions sont lues avant les réponses.
+
+Nombre d'actions gagnées :
+1 action par question, soit une économie totale de 10 actions sur un quizz de 10 questions.

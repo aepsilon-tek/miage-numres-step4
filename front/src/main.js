@@ -37,7 +37,7 @@ document.querySelector('#app').innerHTML = `
               <h5>Description</h5>
               <div id="quiz" role="region" aria-labelledby="quiz-title">
                 <h2 id="quiz-title">À TOI DE JOUER</h2>
-                <div id="question" role="heading" aria-level="3"></div>
+                <div id="question" role="heading" aria-level="3" aria-live="polite">Nouvelle question affichée ici</div>
                 <div id="proposals"></div>
               </div>
             </div>

@@ -30,29 +30,47 @@ export async function initQuizz(questions) {
   // Afficher la première question
   showQuestion();
 }
-  
+function focusFirstProposal() {
+  const firstProposal = document.querySelector("#proposals button");
+  if (firstProposal) {
+    firstProposal.focus();
+  }
+}
+
+
 async function showQuestion() {
   const question = quizzData[currentQuestion];
-  questionElement.innerText = question.label;
-  questionElement.setAttribute("aria-live", "polite"); // Notifie les lecteurs d'écran du changement de question
-  
+
+  // Vider les réponses pour éviter leur lecture prématurée
   proposalsElement.innerHTML = "";
-  
-  // Création des boutons de réponse
-  question.proposals.forEach(proposal => {
-    const button = document.createElement("button");
-    button.innerText = proposal.label;
-    button.setAttribute("aria-pressed", "false"); // Définit l'état non pressé
-    button.setAttribute("role", "button"); // Ajoute le rôle de bouton
-    button.addEventListener("click", selectAnswer);
-    button.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        selectAnswer({ target: button });
-      }
+  proposalsElement.setAttribute("aria-hidden", "true");
+
+  // Réinitialiser et forcer la mise à jour de la question
+  questionElement.setAttribute("aria-live", "polite");
+  questionElement.innerText = ""; // Supprime le contenu temporairement
+  setTimeout(() => {
+    questionElement.innerText = question.label; // Réinsère la question après un délai
+  }, 50);
+
+  // Afficher les réponses après avoir annoncé la question
+  setTimeout(() => {
+    question.proposals.forEach(proposal => {
+      const button = document.createElement("button");
+      button.innerText = proposal.label;
+      button.setAttribute("aria-pressed", "false");
+      button.setAttribute("role", "button");
+      button.addEventListener("click", selectAnswer);
+      proposalsElement.appendChild(button);
     });
-    proposalsElement.appendChild(button);
-  });
+
+    proposalsElement.removeAttribute("aria-hidden"); // Rendre les réponses visibles aux lecteurs d'écran
+    focusFirstProposal(); // Focus automatique sur la première proposition
+  }, 150); // Délai pour garantir que la question est lue avant les réponses
 }
+
+
+
+
   
 async function selectAnswer(e) {
   const selectedButton = e.target;
