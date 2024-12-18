@@ -43,21 +43,27 @@ Screen:
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
+La recommandation de "ne pas utiliser l'ARIA" vise à encourager l'utilisation du HTML sémantique, qui inclut nativement les rôles et propriétés ARIA. 
+L'approche recommandée est de choisir des balises HTML appropriées pour chaque contenu et de recourir à ARIA uniquement quand le HTML ne suffit pas. Cela garantit une meilleure accessibilité et facilité de gestion du code.
 
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
+![Capture d'écran](assets/score_eco_4.png)
 
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
 Réponse:
+De base M. Mehdi pensait que le score n'allait pas augmenté... Pourtant il augmente car le site avait besoin d'amélioration html. (Question à ne pas répondre)
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
 
 # Q11: Quel est la valeur du score AA :
 Réponse:
+La valeur du score AA est : 
 
 # Q12: Quel est la valeur du score AAA :
 Réponse:
+La valeur du score AAA est : 
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
 Réponse:
