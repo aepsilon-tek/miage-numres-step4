@@ -1,14 +1,14 @@
 # Q1: Quels sont les arguments que vous pouvez utiliser pour convaincre votre Client de rendre son quizz accessible ? (Vous pouvez vous aider du cour)
-Réponse:
+Réponse: La rendre accessible aussi par les handicapés
 
 # Q2: Ajouter le screen de votre score :
-Screen:
+Screen: ![alt text](image.png)
 
 # Q3: Est-ce que l'analyse de Lighthouse est suffisante pour évaluer l'Accessibilité de votre Application ?
-Réponse:
+Réponse: Non, voici prq : Incapacité à détecter des problèmes complexes, Tests basés uniquement sur des règles, Absence d'évaluation humaine, Portée limitée
 
 # Q4: Combien de fois vous devez utiliser une touche du clavier pour passer le quizz ?
-Réponse:
+Réponse: 22
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
