@@ -70,13 +70,16 @@ Screen:
 ![toujours score de 98 en accessbilité](image-5.png)
 
 # Q17:  Proposition 1
-Description:
-Nb d'actions gagnée : 
+Description: Amélioration de l’affichage de la question (ARIA live assertive) en informant automatiquement le lecteur d’écran du changement de question.
+Dans showQuestion() du quizz.js, ajout de l’attribut aria-live="assertive" à l’élément questionElement.
+On peut aussi, faire le focus automatique sur la première réponse. A chaque nouvelle question, le focus est automatiquement déplacé sur la première réponse disponible grâce à un id=“first-answer” au premier bouton de réponse.
+J'ai aussi ajouté tabindex="0" sur les boutons de réponse pour les rendre accessibles au clavier et c'est seuelement eux qui ont le focus.
+Nb d'actions gagnée : 22 actions avec tab gagnés concrètement (tous les icone sont sautés).
 
 # Q18:  Proposition 2
-Description:
-Nb d'actions gagnée : 
+Description: J'ai implémenté le fait de lire automatiquement la question actuelle en modifiant quizz.js encore une fois la méthode showQuestion(). Ici, j'ai ajouté SpeechSynthesisUtterance() qui permet de lire a haute voix le texte de la question.
+Nb d'actions gagnée : lecture auto
 
 # Q19:  Proposition 3
-Description:
-Nb d'actions gagnée : 
+Description: -
+Nb d'actions gagnée : -
