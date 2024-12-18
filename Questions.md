@@ -19,12 +19,21 @@ Réponse:Il faut 30 appuis sur la touche Tab pour passer le quizz.
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
+3 rôles ARIA :
+role="button" : Définit un élément comme un bouton interactif.
+role="alert" : Indique un message d’alerte qui doit être immédiatement annoncé par les lecteurs d’écran.
+role="heading" : Déclare un élément comme un titre avec un niveau spécifique (ex : aria-level="1")
+
+3 propriétés ARIA :
+aria-label : Donne une étiquette textuelle à un élément sans contenu visible.
+aria-hidden : Indique si un élément doit être ignoré par les technologies d’assistance (true ou false).
+aria-live : Informe que le contenu d’un élément doit être mis à jour dynamiquement et annoncé par les lecteurs d’écran 
 
 # Q6: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen:Screen:![Capture d'écran](assets/image1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
-Réponse:
+
 
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
