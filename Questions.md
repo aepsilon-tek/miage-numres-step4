@@ -55,10 +55,32 @@ Les liens n'ont pas de noms visibles, rendant la navigation difficile sans souri
 Ces erreurs affectent l'expérience utilisateur, particulièrement pour ceux qui naviguent uniquement au clavier.
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
+L'une des meilleures pratiques de l'ARIA est "ne pas utiliser l'ARIA" car les éléments HTML sémantiques natifs sont déjà optimisés pour l'accessibilité et intégrés aux navigateurs. Voici pourquoi :
 
+HTML sémantique est suffisant :
+
+Les balises comme <button>, <nav>, <header> ou <footer> possèdent déjà des rôles ARIA par défaut.
+Par exemple, <button> a automatiquement le rôle role="button" sans nécessiter d'attribut ARIA supplémentaire.
+Éviter les conflits :
+
+Ajouter des rôles ARIA redondants sur des éléments HTML natifs peut entraîner des conflits avec les lecteurs d'écran.
+Exemple : <button role="button"> est inutile et peut causer des problèmes d'interprétation.
+Performance et maintenance :
+
+Utiliser des balises HTML sémantiques simplifie le code et améliore la maintenance. Ajouter inutilement ARIA complexifie le code sans gain réel.
+Priorité aux standards :
+
+ARIA doit être utilisé uniquement lorsque les éléments HTML natifs ne suffisent pas, comme pour des composants complexes créés avec JavaScript.
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-2.png)
+Le score d’accessibilité est maintenant de 95, ce qui représente une nette amélioration par rapport au score initial de 67 et 71.
 
+Explication :
+Utilisation des balises HTML sémantiques :
+
+Les balises <header>, <main>, <section>, <nav> et <footer> permettent une meilleure structure logique de la page.
+Elles intègrent des rôles ARIA par défaut, améliorant la compréhension pour les lecteurs d’écran.
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
 Réponse:
 
