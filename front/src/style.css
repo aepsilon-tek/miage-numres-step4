@@ -1,9 +1,7 @@
-
-
 * {
   box-sizing: border-box;  
   background: purple;
-  color:grey;
+  color: #00f0a5;
 }
 
 body {
@@ -29,7 +27,7 @@ body {
 }
 
 .topnav a {
-  color: #f2f2f2;
+  color: #00f0a5;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -63,7 +61,6 @@ body {
   display: table;
   clear: both;
 }
-
 
 .footer {
   padding: 20px;
