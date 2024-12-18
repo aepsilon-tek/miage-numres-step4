@@ -2,11 +2,10 @@ import { initQuizz } from './quizz.js';
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
-        <div class="header" style="cursor:pointer;">
+        <header style="cursor:pointer;">
           <h1>My Quizz</h1>
-          Pour accéder a la page /about <a href="about/" style="text-decoration: none;">click ici</a>
-        </div>
-
+          <p>Pour accéder à la page <a href="about/" style="text-decoration: none;">/about, cliquez ici</a></p>
+        </header>
 
         <div class="topnav">
           <a href="#" alt="logo facebook" class="fa fa-facebook"></a>
@@ -31,27 +30,29 @@ document.querySelector('#app').innerHTML = `
           <a href="#" alt="logo rss" class="fa fa-rss"></a>
         </div>
 
-        <div class="row">
-          <div class="leftcolumn">
-            <div class="card">
-              <h1>Nom étudiant</h1>
-              <h5>description</h5>
-              <div id="quiz">
-                <h2>A TOI DE JOUER</h2>
-                <div id="question"></div>
-                <div id="proposals"></div>
-              </div>
-            </div>
-          </div>
-          <div class="rightcolumn">
-            <div class="card">
-              <img alt="Image de point dinterogation" src="/question.png" width="500" height="600">
-            </div>
+         <main class="row">
+    <section class="leftcolumn">
+      <article class="card">
+        <h1>Nom étudiant</h1>
+        <h5>Description</h5>
+        <div id="quiz">
+          <h2>A TOI DE JOUER</h2>
+          <div id="question"></div>
+          <div id="proposals"></div>
         </div>
+      </article>
+    </section>
 
-        <div class="footer">
-          <h2>@2024</h2>
-        </div>
+    <aside class="rightcolumn">
+      <div class="card">
+        <img alt="Image de point d'interrogation" src="/question.png" width="500" height="600">
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <h2>@2024</h2>
+  </footer>
 `
 
 initQuizz();
