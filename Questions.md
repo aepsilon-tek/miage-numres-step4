@@ -42,13 +42,10 @@ Réponse: Les rôles ARIA permettent de définir le comportement des éléments 
 Screen: ![alt text](image-1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
-Réponse:
+Réponse: La best practice "ne pas utiliser l'ARIA" souligne qu'il est préférable d'utiliser les éléments HTML natifs lorsque cela est possible, car ils sont intrinsèquement accessibles et déjà pris en charge par les navigateurs et les technologies d'assistance. Par exemple, un bouton <button> ou un champ de formulaire <input> inclut automatiquement les comportements et propriétés nécessaires pour l'accessibilité, comme la gestion du clavier et des lecteurs d’écran. Utiliser des rôles ou des propriétés ARIA pour remplacer ces éléments natifs peut introduire des bugs, une complexité inutile, ou des incohérences avec les standards d'accessibilité. L'ARIA doit être utilisée uniquement pour combler les lacunes des fonctionnalités HTML lorsqu'il n'existe pas d'équivalent natif.
 
 # Q8: Ajouter le screen de votre score Lighthouse
-Screen:
-
-# Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
-Réponse:
+Screen:![alt text](image-2.png)
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
