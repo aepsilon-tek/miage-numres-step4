@@ -48,22 +48,23 @@ Réponse: La best practice "ne pas utiliser l'ARIA" souligne qu'il est préféra
 Screen:![alt text](image-2.png)
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
-Réponse:
+Réponse: 2.38
 
 # Q11: Quel est la valeur du score AA :
-Réponse:
+Réponse: 3.0
 
 # Q12: Quel est la valeur du score AAA :
-Réponse:
+Réponse: 4.5
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
-Réponse:
+Réponse: Pour changer la valeur du contraste de votre texte, vous pouvez ajuster la couleur du texte (color) et celle de l’arrière-plan (background-color) pour obtenir une meilleure distinction entre les deux. L’opacité (opacity) ou les filtres CSS comme filter: contrast() peuvent également être utilisés pour améliorer le contraste. De plus, augmenter la taille et le poids de la police (font-size, font-weight) renforce la lisibilité. Il est important de respecter les normes WCAG, qui recommandent un ratio de contraste d’au moins 4.5:1 pour le texte normal, et d’utiliser des outils comme WebAIM Contrast Checker pour vérifier la conformité.
 
 # Q14: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen:![alt text](image-4.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
-Réponse:
+Réponse: 
+En appliquant les altérations comme la vision floue, le daltonisme ou l'achromatopsie dans l'onglet "Émuler les déficiences visuelles", il devient très difficile, voire impossible, de distinguer visuellement les liens s’ils ne sont pas bien stylés. Les liens qui dépendent uniquement de la couleur, sans soulignement ou indice visuel supplémentaire, sont indiscernables, notamment avec un faible contraste ou en nuances de gris. Pour garantir leur accessibilité, il est essentiel d'utiliser des indicateurs visuels clairs (soulignement, contraste élevé) et des attributs comme aria-label pour une meilleure prise en charge par les technologies d’assistance.
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
