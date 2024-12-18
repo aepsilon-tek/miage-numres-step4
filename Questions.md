@@ -51,11 +51,15 @@ Screen: ![alt text](image-4.png)
 Réponse: Non
 
 # Q16: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![alt text](image-5.png)
 
 # Q17:  Proposition 1
-Description:
+Description: 
+    Ajouter un mécanisme pour déplacer automatiquement le focus vers les propositions (<div id="proposals">) après qu'une réponse ait été soumise. Cela réduit le besoin pour l'utilisateur de naviguer manuellement au clavier jusqu'à cette section, en assurant une transition fluide et accessible.
+    L'ajout de l'attribut tabindex="-1" au conteneur des propositions permet de cibler cet élément pour y positionner le focus. Ensuite, un appel à document.getElementById('proposals').focus() garantit que les utilisateurs du clavier ou des lecteurs d'écran sont directement dirigés vers les propositions.
 Nb d'actions gagnée : 
+    1 à 2 actions clavier par question (tabulation pour naviguer jusqu'à la section des propositions).
+    Sur un quiz de 10 questions, cela représente une économie de 10 à 20 interactions clavier.
 
 # Q18:  Proposition 2
 Description:
