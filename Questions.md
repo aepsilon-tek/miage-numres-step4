@@ -26,16 +26,26 @@ Réponse: Non, l'analyse de Lighthouse est un outil utile pour identifier les pr
 Réponse: Il faut 22 utilisations arriver au quizz, puis 33 pour le passer en entier.(avec tab et entrée)
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
-Réponse:
+Réponse: ARIA Roles:
+```bash
+role="navigation" - Identifies major navigation sections
+role="main" - Identifies the main content area
+role="complementary" - Identifies supporting content
+ARIA Properties:
 
+aria-label - Names an element for screen readers
+aria-required - Indicates required form fields
+aria-expanded - Shows if an expandable element is open/closed
+```
 # Q6: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![Score Lighthouse 2](image-1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
-Réponse:
+Réponse: L'une des meilleures pratiques de l'ARIA est de ne pas utiliser l'ARIA si une solution HTML standard existe. Cela est dû au fait que l'ARIA est une technologie de secours qui ne devrait être utilisée que lorsque les éléments HTML natifs ne suffisent pas à fournir une expérience accessible. En effet, l'ARIA peut être complexe à implémenter et à maintenir, et peut entraîner des erreurs si elle est mal utilisée. Il est donc préférable de privilégier les éléments HTML sémantiques et les attributs natifs pour garantir une accessibilité optimale.
 
 # Q8: Ajouter le screen de votre score Lighthouse
-Screen:
+Après modifications et recommandations de l'audit Lighthouse : 
+Screen: ![Score 3 Lighthouse](image-2.png)
 
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
 Réponse: **NE PAS REPONDRE**
