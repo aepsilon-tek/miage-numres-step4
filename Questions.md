@@ -27,9 +27,19 @@ En passant le quizz est jusqu'à l'évaluation on arrive à un total de 26 cliqu
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
+## Rôles ARIA
+- role="button" : Utilisé pour indiquer qu'un élément non traditionnel (comme une <div> ou <span>) doit être traité comme un bouton par les technologies d'assistance. Cela aide à fournir un contexte aux utilisateurs sur la fonctionnalité de l'élément.
+- role="navigation" : Utilisé pour indiquer que l'élément contient une section de navigation principale du site, comme un menu ou des liens de barre de navigation. Cela aide les utilisateurs de lecteurs d'écran à identifier et à accéder rapidement aux zones de navigation du site.
+- role="alert" : Utilisé pour marquer les messages importants et urgents qui doivent être immédiatement annoncés à l'utilisateur, sans attendre que ce dernier ne fasse quelque action. Cela garantit que les messages critiques sont reçus et compris par tous les utilisateurs, y compris ceux qui ont des limitations visuelles ou auditives.
+
+## Propriétés ARIA
+- aria-expanded="true|false" : Indique si le contenu associé à un élément, généralement utilisé avec des menus déroulants ou des options d'accordéon, est actuellement étendu (visible) ou non. Cela aide les utilisateurs à comprendre si l'action sur un élément révélera ou cachera des contenus associés.
+- aria-hidden="true|false" : Utilisée pour informer les technologies d'assistance si un élément doit être rendu invisible ou non. Quand aria-hidden="true", l'élément et tous ses enfants sont cachés aux technologies d'assistance, ce qui peut être utile pour éviter la répétition ou cacher des éléments purement décoratifs qui ne sont pas pertinents pour les utilisateurs d'assistants.
+- aria-label : Fournit une étiquette textuelle explicite pour des situations où une étiquette visuelle n'est pas suffisante. Par exemple, un bouton avec une icône mais sans texte peut avoir un aria-label pour clarifier sa fonction, comme aria-label="Fermer" pour un bouton représenté seulement par une croix.
 
 # Q6: Ajouter le screen de votre score Lighthouse
 Screen:
+![Capture d'écran](assets/score_eco_3.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
