@@ -33,25 +33,30 @@ Screen:
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
-
+![alt text](image-3.png)   2.38
 # Q11: Quel est la valeur du score AA :
 Réponse:
-
+3.0
 # Q12: Quel est la valeur du score AAA :
 Réponse:
-
+4.5
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
 Réponse:
+Modifier les couleurs utilisées :
+ 
+Choisir une couleur de texte et une couleur de fond qui respectent un ratio de contraste minimum de 4.5:1 pour le niveau AA ou 7:1 pour le niveau AAA.
+Utiliser des thèmes ou des palettes prédéfinis :
 
+Privilégier des combinaisons de couleurs accessibles dès la conception.
 # Q14: Ajouter le screen de votre score Lighthouse
 Screen:
-
+![alt text](image-4.png)
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:
-
+Nn
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
-
+![alt text](image-5.png)
 # Q17:  Proposition 1
 Description:
 Nb d'actions gagnée : 
