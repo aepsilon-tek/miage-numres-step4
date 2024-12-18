@@ -11,10 +11,10 @@ Réponse: L'analyse de Lightouse n'est pas suffisant pour évaluer l'Accessibili
 Réponse: On doit utiliser 22 fois la touche de clavier pour accéder aux réponses
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
-Réponse:
+Réponse: Il y a les roles navigation, main et button. Il y a les 3 propriétés aria-label, aria-labelledby, aria-hidden
 
 # Q6: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![alt text](image-1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:

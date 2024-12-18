@@ -45,7 +45,7 @@ document.querySelector('#app').innerHTML = `
           </div>
           <div class="rightcolumn">
             <div class="card">
-              <img src="/question.png" width="500" height="600">
+              <img src="/question.png"alt="Image de point d'interrogation" width="500" height="600">
             </div>
         </div>
 
