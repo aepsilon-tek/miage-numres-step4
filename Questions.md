@@ -92,13 +92,14 @@ Screen:
 ![alt text](image-6.png)
 
 # Q17:  Proposition 1
-Description:
-Nb d'actions gagnée : 
+Description: faire arriver le mal-voyant ou celui qui ne peux pas utiliser la souris directement sur le quizz en lui indiquant avec le narrateur le bouton sur lequel appuyer pour commencer le quizz
+Nb d'actions gagnée : une vingtaine
 
 # Q18:  Proposition 2
-Description:
-Nb d'actions gagnée : 
+Description: enlever des réseaux sociaux pour accéder plus rapidement aux autres fonctionnalités
+Nb d'actions gagnée : une dizaine
 
 # Q19:  Proposition 3
-Description:
-Nb d'actions gagnée : 
+Description:Utiliser des régions ARIA Live pour les questions et réponses dynamiques
+Les régions ARIA aria-live permettent d’annoncer automatiquement un changement de contenu sans que l’utilisateur ait besoin d’interagir.
+Nb d'actions gagnée : 5 actions

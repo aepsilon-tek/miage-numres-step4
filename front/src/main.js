@@ -2,6 +2,7 @@ import { initQuizz } from './quizz.js';
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
+        <a href="#quiz" id="skip-to-quiz" class="visually-hidden" aria-label="Aller directement au quizz en appuyant sur fleche de droite">Accéder au quizz</a>
         <header class="header" style="cursor:pointer;" aria-label="En-tête du quizz">
           <h1>My Quizz</h1>
           <p>Pour accéder à la page <a href="about/" style="text-decoration: none;" aria-label="Page À propos">cliquez ici</a></p>
@@ -54,4 +55,10 @@ document.querySelector('#app').innerHTML = `
         </footer>
 `;
 
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowRight') {
+    const quiz = document.getElementById('quiz');
+    quiz.focus({ focusVisible: true });
+  }
+});
 initQuizz();
