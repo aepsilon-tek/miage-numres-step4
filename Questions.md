@@ -87,6 +87,7 @@ AAA : 4.5
 
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
+
 Réponse:
 
 
@@ -98,8 +99,10 @@ Screen:
 ![alt text](image-4.png)
 
 # Q17:  Proposition 1
-Description:
+Description: mettre un tabindex dès la première proposition du quizz lorsque nous arrivons directement sur la page.
 Nb d'actions gagnée : 
+
+1 à 4 actions au total via le tab
 
 # Q18:  Proposition 2
 Description:

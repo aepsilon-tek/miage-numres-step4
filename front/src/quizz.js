@@ -30,16 +30,32 @@ export async function initQuizz(questions) {
   
 async function showQuestion() {
   const question = quizzData[currentQuestion];
-  questionElement.innerText = question.label
-  
+
+  // Ajouter le rôle document pour isoler la zone active
+  questionElement.setAttribute("role", "main");
+  questionElement.setAttribute("aria-live", "assertive"); // Lecture prioritaire
+  questionElement.setAttribute("tabindex", "-1"); 
+  questionElement.innerText = question.label;
+
+  // Focus automatique sur la question
+  setTimeout(() => {
+    questionElement.focus({ focusVisible: true }); // Placer le focus discrètement
+  }, 100); // Délai court pour assurer que la question est visible avant le focus
+
+  // Réinitialiser les propositions
   proposalsElement.innerHTML = "";
-  question.proposals.forEach(proposal => {
+  question.proposals.forEach((proposal) => {
     const button = document.createElement("button");
     button.innerText = proposal.label;
-    proposalsElement.appendChild(button);
+    button.setAttribute("tabindex", "0"); 
     button.addEventListener("click", selectAnswer);
+    proposalsElement.appendChild(button);
   });
 }
+
+
+
+
   
 async function selectAnswer(e) {
   const selectedButton = e.target;
