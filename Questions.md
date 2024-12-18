@@ -78,7 +78,7 @@ oui
 Screen:
 ![Image accessibilitémieuxMieux](./Acessibilitymieuxmieux.png)
 # Q17:  Proposition 1
-Description:
+Description:Lorsqu'un changement dynamique survient sur la page, il peut être crucial pour l'utilisateur, en particulier pour les utilisateurs de lecteurs d'écran, de savoir immédiatement que quelque chose a changé.
 Nb d'actions gagnée : 
 
 # Q18:  Proposition 2
