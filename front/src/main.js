@@ -7,8 +7,25 @@ document.querySelector('#app').innerHTML = `
           Pour accéder a la page  <a href="about/">/about</a>
         </header>
 
+        <main class="row">
+          <div class="leftcolumn">
+            <div class="card">
+              <h1>Nom étudiant</h1>
+              <h2>description</h5>
+              <div id="quiz" aria-labelledby="quiz-title">
+                <h2 id="quiz-title">À TOI DE JOUER</h2>
+                <div id="question"></div>
+                <div id="proposals"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rightcolumn">
+            <div class="card">
+              <img src="/question.png" alt="txt" width="500" height="600">
+            </div>
+        </main>
 
-        <nav class="topnav">
+                <nav class="topnav">
           <a href="#" aria-label="Facebook" class="fa fa-facebook"></a>
           <a href="#" aria-label="Twitter" class="fa fa-twitter"></a>
           <a href="#" aria-label="Google" class="fa fa-google"></a>
@@ -30,24 +47,6 @@ document.querySelector('#app').innerHTML = `
           <a href="#" aria-label="Reddit" class="fa fa-reddit"></a>
           <a href="#" aria-label="RSS" class="fa fa-rss"></a>
         </nav>
-
-        <main class="row">
-          <div class="leftcolumn">
-            <div class="card">
-              <h1>Nom étudiant</h1>
-              <h2>description</h5>
-              <div id="quiz" aria-labelledby="quiz-title">
-                <h2 id="quiz-title">À TOI DE JOUER</h2>
-                <div id="question"></div>
-                <div id="proposals"></div>
-              </div>
-            </div>
-          </div>
-          <div class="rightcolumn">
-            <div class="card">
-              <img src="/question.png" alt="txt" width="500" height="600">
-            </div>
-        </main>
 
         <footer class="footer" role="contentinfo">
           <h2>@2024</h2>

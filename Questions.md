@@ -64,11 +64,11 @@ Réponse:
 Screen:![alt text](image-5.png)
 
 # Q17:  Proposition 1
-Description:
+Description: Faire en sorte que le narrateur puisse lire les questions
 Nb d'actions gagnée : 
 
 # Q18:  Proposition 2
-Description:
+Description: Mettre les liens en fin de page, et peut etre meme ignorer les question pour le narrateur
 Nb d'actions gagnée : 
 
 # Q19:  Proposition 3
