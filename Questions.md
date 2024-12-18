@@ -52,15 +52,20 @@ Réponse:
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
+2.38
 
 # Q11: Quel est la valeur du score AA :
 Réponse:
-
+3.0
 # Q12: Quel est la valeur du score AAA :
 Réponse:
-
+4.5
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
 Réponse:
+Pour améliorer le contraste, il faut :
+- Augmenter la luminosité ou foncer le texte pour qu’il ressorte mieux sur l’arrière-plan (Exemple : passer le texte gris à blanc sur fond violet).
+- Modifier la couleur de fond pour qu’elle contraste davantage avec le texte.
+- Utiliser des outils de vérification comme Lighthouse ou Contrast Checker pour tester les nouvelles couleurs.
 
 # Q14: Ajouter le screen de votre score Lighthouse
 Screen:
