@@ -8,19 +8,33 @@ Augmentation légère de la portée et de l'audience
  Amélioration du référencement et de la performance
 # Q2: Ajouter le screen de votre score :
 Screen:
+![Image accessibilité](./Acessibility.png)
 
 # Q3: Est-ce que l'analyse de Lighthouse est suffisante pour évaluer l'Accessibilité de votre Application ?
 Réponse:
 
+Il est essentiel de réaliser des tests manuels pour valider l’expérience utilisateur.
+
 # Q4: Combien de fois vous devez utiliser une touche du clavier pour passer le quizz ?
 Réponse:
-
+31 fois
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
 
+
+3 rôles ARIA
+role="button" : Indique un bouton interactif.
+role="alert" : Message prioritaire immédiatement annoncé.
+role="dialog" : Définit une boîte de dialogue.
+
+3 propriétés ARIA
+aria-label : Étiquette accessible d’un élément.
+aria-hidden : Cache un élément des lecteurs d’écran.
+aria-expanded : Indique l’état (développé/replié) d’un élément.
+
 # Q6: Ajouter le screen de votre score Lighthouse
 Screen:
-
+![Image accessibilitéMieux](./Acessibilitymieux.png)
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
 
