@@ -19,7 +19,7 @@ export async function initQuizz(questions) {
 
   
   quizzData = await getQuestionsApi();
-    
+    console.log(quizzData);
   for (let i = 0; i < quizzData.length; i++) {
     let proposals = await getProposalApi(quizzData[i].id);
     quizzData[i].proposals = proposals;
