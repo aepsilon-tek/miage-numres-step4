@@ -28,7 +28,7 @@ body {
 }
 
 .topnav a {
-  color: #FFFFFF; /* Blanc */
+  color: #ffffff; /* Blanc */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -93,4 +93,9 @@ button {
 button:hover {
   background-color: #003F72; /* Bleu plus foncé */
   color: #FFFFFF; /* Blanc pur reste */
+}
+
+a {
+  color: #00ffc5;
+  text-decoration: underline;
 }

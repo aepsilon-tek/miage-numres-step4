@@ -85,10 +85,11 @@ Screen:
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:
-POur la vision trouble non et pour les autres aussi.
+Pour la vision trouble non et pour les autres aussi.
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-6.png)
 
 # Q17:  Proposition 1
 Description:
