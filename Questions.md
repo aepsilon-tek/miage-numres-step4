@@ -1,6 +1,11 @@
 # Q1: Quels sont les arguments que vous pouvez utiliser pour convaincre votre Client de rendre son quizz accessible ? (Vous pouvez vous aider du cour)
 Réponse:
+Pour plusieurs raisons:
 
+Dans de nombreux pays, l’accessibilité numérique est une obligation légal
+Par responsabilité sociale
+Augmentation légère de la portée et de l'audience
+ Amélioration du référencement et de la performance
 # Q2: Ajouter le screen de votre score :
 Screen:
 
