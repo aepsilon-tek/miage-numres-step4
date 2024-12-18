@@ -17,13 +17,20 @@ Réponse: button, alert, dialog & aria-label, aria-hidden, aria-expanded
 Screen: ![alt text](image-1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
-Réponse:
+Réponse: 
+L'une des meilleures pratiques de l'ARIA est "ne pas utiliser l'ARIA" lorsqu'elle n'est pas nécessaire, car :
+
+HTML natif est suffisant : Les balises HTML sémantiques (comme <button> ou <header>) ont déjà des rôles ARIA implicites.
+Réduction des erreurs : Mal utiliser l'ARIA peut causer des conflits avec les technologies d'assistance.
+Simplicité et maintenance : Utiliser HTML sémantique rend le code plus simple, lisible et facile à maintenir.
+
+On utilise ARIA uniquement lorsque le HTML standard ne peut pas répondre aux besoins d'accessibilité.
 
 # Q8: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![alt text](image-2.png)
 
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
-Réponse:
+Réponse: Peut etre des problèmes d'accessibilité restants ??
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
