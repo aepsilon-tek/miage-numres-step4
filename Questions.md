@@ -29,16 +29,19 @@ propriétés ARIA :
 - aria-expanded="false/true" : Signale si un élément, comme un menu déroulant, est replié ou étendu.  
 
 # Q6: Ajouter le screen de votre score Lighthouse
-Screen: ![Capture d'écran Q2](./photoQ6.png)
+Screen: ![Capture d'écran Q6](./photoQ6.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
-Réponse:
+Réponse: 
+La best practice "ne pas utiliser l'ARIA" s'explique par :  
+
+- HTML natif : Les éléments HTML sémantiques sont naturellement accessibles.  
+- Complexité : Une mauvaise utilisation d’ARIA peut créer des erreurs.  
+- Compatibilité : Les navigateurs et lecteurs d’écran gèrent mieux le HTML standard.  
+
 
 # Q8: Ajouter le screen de votre score Lighthouse
-Screen:
-
-# Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
-Réponse:
+Screen: Screen: ![Capture d'écran Q8](./photoQ8.png)
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
