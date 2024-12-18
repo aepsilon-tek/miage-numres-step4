@@ -25,10 +25,11 @@ Screen:
 ![alt text](image-1.png)
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
-
+Les éléments HTML sémantiques sont automatiquement pris en charge par les navigateurs et les lecteurs d'écran. Par exemple, un <button> natif apporte automatiquement le rôle button et gère les événements clavier. Si on utilise un <div> avec role="button", il faut ajouter manuellement tout le comportement lié à un bouton. Cela crée des risques d'erreurs et une maintenance plus complexe.
+Code plus simple et maintenable : Utiliser HTML natif au lieu de ARIA réduit la complexité du code, rendant le développement plus rapide et évitant les redondances inutiles.
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
-
+![alt text](image-2.png)
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
