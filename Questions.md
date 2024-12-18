@@ -38,25 +38,36 @@ Screen:
 Réponse: Du coup ca a augmenté haha.
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
-Réponse: 
+Réponse: J'ai une valeur de 2.38 actuellement.
 
 # Q11: Quel est la valeur du score AA :
-Réponse:
+Réponse: La valeur pour AA est de 4.5.
 
 # Q12: Quel est la valeur du score AAA :
-Réponse:
+Réponse: La valeur pour AAA est de 7.
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
-Réponse:
+Réponse: On peut par exemple faire de la manière suivante pour un élément :
+color: #000000; /* Couleur du texte en noir */
+background-color: #FFFFFF; /* Fond blanc */
+Cela va augmenter la valeur de contraste de l'élément.
 
 # Q14: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: 
+
+![score de 98 en accessibilité](image-3.png)
+En vrai le score n'a pas changé mais franchement c'est plus lisible je trouve !!
+
+![score de contraste](image-4.png)
+J'ai mis un petit screen du score de contraste d'un élément, c'est pas mal !!
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
-Réponse:
+Réponse: Quasiement, mais il manque quelques trucs pour que ce soit très clair. Par exemple, le "cliquer ici" il faudrait le souligner sinon on ne voit pas vraiment que c'est un URL.
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
+
+
 
 # Q17:  Proposition 1
 Description:
