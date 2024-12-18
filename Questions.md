@@ -67,7 +67,7 @@ Screen:
 ![access5](image-4.png)
 
 # Q17:  Proposition 1
-Description:
+Description: le narrateur doit pouvoir lire les questions pour l'utilisateur 
 Nb d'actions gagnée : 
 
 # Q18:  Proposition 2
