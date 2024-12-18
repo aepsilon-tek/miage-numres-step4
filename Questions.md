@@ -1,17 +1,19 @@
 # Q1: Quels sont les arguments que vous pouvez utiliser pour convaincre votre Client de rendre son quizz accessible ? (Vous pouvez vous aider du cour)
-Réponse:
+Réponse: Rendre un quizz accessible permet de garantir l’inclusion et l’égalité des chances pour les personnes en situation de handicap, de respecter les obligations légales et normatives (WCAG, RGAA), de limiter les risques de sanctions financières, tout en élargissant la base d’utilisateurs potentiels, en améliorant l’expérience utilisateur (UX) et la compatibilité avec les technologies d’assistance.
 
 # Q2: Ajouter le screen de votre score :
-Screen:
+Screen: 
+
+![score de 71 en accessibilité](image.png)
 
 # Q3: Est-ce que l'analyse de Lighthouse est suffisante pour évaluer l'Accessibilité de votre Application ?
-Réponse:
+Réponse: Lighthouse est un bon point de départ pour détecter les erreurs d’accessibilité évidentes, mais il ne permet pas de garantir une accessibilité totale. Pour être conforme aux normes WCAG 2.1 et RGAA, il faut compléter l’audit par des tests manuels, des tests avec des outils spécialisés et des contrôles de compatibilité avec les lecteurs d’écran.
 
 # Q4: Combien de fois vous devez utiliser une touche du clavier pour passer le quizz ?
-Réponse:
+Réponse: On doit utiliser environ 23 fois la touche tab pour accéder aux éléments du questionnaire et faire entrée plusieurs fois. C'est beaucoup ...
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
-Réponse:
+Réponse: 
 
 # Q6: Ajouter le screen de votre score Lighthouse
 Screen:
