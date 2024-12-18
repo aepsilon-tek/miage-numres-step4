@@ -15,9 +15,20 @@ Réponse: il faut utiliser 30 fois avec tab pour passer le quizz et les bonnes r
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
+- Roles ARIA:
+    1. `role="button"` : Indique qu'un élément est un bouton.
+    2. `role="navigation"` : Indique qu'un élément est une section de navigation.
+    3. `role="alert"` : Indique qu'un élément est une alerte.
+
+- Propriétés ARIA:
+    1. `aria-label` : Fournit une étiquette accessible pour un élément.
+    2. `aria-hidden` : Indique qu'un élément est caché aux technologies d'assistance.
+    3. `aria-expanded` : Indique si un élément, tel qu'un menu ou une section, est actuellement étendu ou replié.
+Réponse:
 
 # Q6: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text]({5B053236-A587-4B4F-A828-300AF6B0AD89}.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
