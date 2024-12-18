@@ -5,10 +5,24 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quizz interactif accessible et adapté aux besoins des utilisateurs avec un suivi du score et des questions dynamiques." />
     <title>Quizz App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <!-- Amélioration de l'accessibilité -->
+    <header role="banner">
+      <h1 id="main-title">Quizz App</h1>
+    </header>
+
+    <main id="app" role="main">
+      <!-- Le contenu de l'application sera injecté dynamiquement -->
+    </main>
+
+    <footer role="contentinfo">
+      <p>© 2024 Quizz App - Créé avec soin pour tous</p>
+    </footer>
+
+    <!-- Lien vers le script principal -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

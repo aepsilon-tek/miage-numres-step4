@@ -25,9 +25,21 @@ Il faut utiliser 33 fois une touche du clavier pour compléter le quizz.
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
+3 rôles ARIA :
+
+- role="button" : Définit un élément comme un bouton interactif, même s’il ne s’agit pas d’un élément HTML <button>.
+- role="alert" : Indique une région destinée à afficher des messages d’alerte, qui doivent être immédiatement annoncés par les lecteurs d’écran.
+- role="navigation" : Utilisé pour identifier une section de navigation sur une page web.
+
+3 propriétés ARIA :
+
+- aria-label : Fournit une description textuelle à un élément interactif ou graphique.
+- aria-hidden : Indique qu’un élément est masqué pour les technologies d’assistance comme les lecteurs d’écran.
+- aria-live : Définit la manière dont un lecteur d’écran doit gérer les mises à jour dynamiques du contenu.
 
 # Q6: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
