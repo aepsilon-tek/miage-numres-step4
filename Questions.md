@@ -37,25 +37,28 @@ Réponse: Les éléments HTML natifs sont intrinsèquement accessibles
 Screen:![alt text](image-2.png)
 
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
-Réponse:
+Réponse: Lighthouse mesure l'accessibilité principalement en se basant sur des critères fonctionnels (étiquettes accessibles, navigation au clavier, etc.) et non uniquement sur la sémantique du HTML.
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
-Réponse:
+Réponse: 2.38
 
 # Q11: Quel est la valeur du score AA :
-Réponse:
+Réponse: 3.0
 
 # Q12: Quel est la valeur du score AAA :
-Réponse:
+Réponse: 4.5
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
-Réponse:
+Réponse: En changeant la couleur du text pour améliorer le contraste
 
 # Q14: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![alt text](image-3.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
-Réponse:
+Réponse: 
+- Non, Les textes flous deviennent difficilement lisibles, surtout si la taille de la police est petite ou si le contraste entre le texte et l'arrière-plan est faible.
+- Les liens ne sont pas différenciés uniquement par la couleur
+ 
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
