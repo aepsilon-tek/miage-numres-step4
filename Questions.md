@@ -88,14 +88,15 @@ Non, pas toujours
 Screen:
 ![alt text](image-7.png)
 
+
 # Q17:  Proposition 1
-Description:
-Nb d'actions gagnée : 
+Proposition 1 : Utiliser aria-live="assertive"
+L’attribut aria-live="assertive" permet d'informer immédiatement les utilisateurs de lecteurs d'écran des changements critiques, comme des messages d’erreur ou des notifications importantes. Cela élimine la nécessité pour l'utilisateur de chercher manuellement ces informations sur la page. Par exemple, lorsqu’une erreur survient lors d’un formulaire, le message est automatiquement lu, offrant une expérience plus fluide et accessible.
 
 # Q18:  Proposition 2
-Description:
-Nb d'actions gagnée : 
+Proposition 2 : Utiliser focus() pour guider l'utilisateur
+En utilisant focus() pour déplacer le focus sur un élément clé (comme une nouvelle section ou un contenu chargé dynamiquement), l'utilisateur est directement guidé vers la zone pertinente. Cela supprime la nécessité de naviguer manuellement pour trouver les informations importantes, améliorant ainsi l'expérience utilisateur, notamment pour les personnes utilisant des technologies d’assistance.
 
 # Q19:  Proposition 3
-Description:
-Nb d'actions gagnée : 
+Proposition 3 : Utiliser aria-live="polite"
+L’attribut aria-live="polite" est idéal pour notifier les utilisateurs de changements non urgents, comme des mises à jour de statut ou des informations secondaires (ex. : "Chargement terminé"). Cela permet de transmettre les informations de manière non intrusive, sans interrompre les interactions en cours, tout en assurant que les mises à jour soient accessibles et compréhensibles.
