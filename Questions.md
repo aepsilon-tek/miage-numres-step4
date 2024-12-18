@@ -76,7 +76,7 @@ oui
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
-
+![Image accessibilitémieuxMieux](./Acessibilitymieuxmieux.png)
 # Q17:  Proposition 1
 Description:
 Nb d'actions gagnée : 

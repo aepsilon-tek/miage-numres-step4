@@ -45,7 +45,7 @@ document.querySelector('#app').innerHTML = `
           
           <aside class="rightcolumn">
             <article class="card">
-              <img src="/question.png" alt="Image décorative représentant une question" width="500" height="600">
+              <img src="/question.png" alt="Illustration représentant une question de quiz" width="500" height="600">
             </article>
           </aside>
         </main>
@@ -56,3 +56,12 @@ document.querySelector('#app').innerHTML = `
 `;
 
 initQuizz();
+
+// Ajout du style CSS pour la gestion du focus visible
+const style = document.createElement('style');
+style.innerHTML = `
+  a:focus, button:focus {
+    outline: 3px solid #f00; /* Exemple de bordure rouge au focus */
+  }
+`;
+document.head.appendChild(style);
