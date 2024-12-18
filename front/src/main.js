@@ -4,10 +4,41 @@ import './style.css';
 document.querySelector('#app').innerHTML = `
   <header style="cursor:pointer;">
     <h1>My Quizz</h1>
-    <p>Pour accéder à la page /about, <a href="about/" style="text-decoration: none;">click ici</a></p>
+    <p>
+  Pour accéder à la page /about, 
+  <a href="about/" style="text-decoration: underline; color: #FFD700; font-weight: bold;">
+    Accédez à la page À propos
+  </a>
+</p>
   </header>
 
-  <nav class="topnav">
+  
+
+  <main>
+    <section class="row">
+      <section class="leftcolumn">
+        <article class="card">
+          <h2>Nom étudiant</h2>
+          <p>Description</p>
+          <section id="quiz">
+            <h2>A TOI DE JOUER</h2>
+            <div id="question"  aria-live="assertive"></div>
+            <div id="proposals"></div>
+          </section>
+        </article>
+      </section>
+
+      <aside class="rightcolumn">
+        <div class="card">
+          <img src="/question.png" width="500" height="600" alt="Symbole de question">
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <h2>@2024</h2>
+    <nav class="topnav">
     <a href="#" class="fa fa-facebook" aria-label="Facebook"></a>
     <a href="#" class="fa fa-twitter" aria-label="Twitter"></a>
     <a href="#" class="fa fa-google" aria-label="Google"></a>
@@ -29,31 +60,6 @@ document.querySelector('#app').innerHTML = `
     <a href="#" class="fa fa-reddit" aria-label="Reddit"></a>
     <a href="#" class="fa fa-rss" aria-label="RSS"></a>
   </nav>
-
-  <main>
-    <section class="row">
-      <section class="leftcolumn">
-        <article class="card">
-          <h2>Nom étudiant</h2>
-          <p>Description</p>
-          <section id="quiz">
-            <h2>A TOI DE JOUER</h2>
-            <div id="question"></div>
-            <div id="proposals"></div>
-          </section>
-        </article>
-      </section>
-
-      <aside class="rightcolumn">
-        <div class="card">
-          <img src="/question.png" width="500" height="600" alt="Symbole de question">
-        </div>
-      </aside>
-    </section>
-  </main>
-
-  <footer>
-    <h2>@2024</h2>
   </footer>
 `;
 

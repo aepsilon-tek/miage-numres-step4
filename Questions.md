@@ -69,13 +69,19 @@ Réponse:Non, il est difficile de déterminer ce qui est un lien avec certaines 
  Screen: ![Capture d'écran](assets/image6.png)
 
 # Q17:  Proposition 1
-Description:
-Nb d'actions gagnée :  
+Description :
+Les réseaux sociaux ont été déplacés du haut de la page vers le footer. Cela permet de simplifier la navigation au clavier en évitant aux utilisateurs de passer sur de nombreux liens en début de page. La navigation devient plus rapide pour atteindre le contenu principal.
+
+Nb d'actions gagnée :   20
 
 # Q18:  Proposition 2
-Description:
+Description: Changer le lien "click ici" pour qu'il soit plus visible
+Le lien "click ici" manque de visibilité et de contexte clair. Pour améliorer son accessibilité et sa compréhension, on remplace le texte du lien par une description plus informative et on améliore son style pour le rendre visuellement distinct.
+
 Nb d'actions gagnée : 
 
 # Q19:  Proposition 3
-Description:
-Nb d'actions gagnée : 
+Ajout de aria-live="assertive" combiné avec un vidage et une mise à jour forcée du contenu pour s’assurer que la question est lue par le lecteur d’écran. Cela corrige le problème où la question ne se lisait pas auparavant.
+
+Nb d'actions gagnées :
+1 action gagnée : L’utilisateur n’a plus besoin de chercher ou de forcer la lecture de la question grâce au lecteur d’écran. La lecture est automatique.
