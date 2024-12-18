@@ -37,8 +37,26 @@ document.querySelector('#app').innerHTML = `
               <p class="description">description</p>
               <section id="quiz" aria-label="Quiz section">
                 <h3>A TOI DE JOUER</h3>
-                <div id="question" role="heading" aria-level="4"></div>
-                <div id="proposals" role="group" aria-label="Quiz answers"></div>
+                <div id="question" 
+                     role="heading" 
+                     aria-level="4"
+                     aria-live="polite"
+                     aria-atomic="true">
+                </div>
+                <div id="proposals" 
+                     role="group" 
+                     aria-label="Quiz answers">
+                </div>
+                <div id="feedback"
+                     aria-live="assertive"
+                     aria-atomic="true"
+                     class="feedback-message">
+                </div>
+                <div id="score"
+                     aria-live="polite"
+                     aria-atomic="true"
+                     class="score-display">
+                </div>
               </section>
             </article>
           </section>
@@ -48,6 +66,7 @@ document.querySelector('#app').innerHTML = `
             </article>
           </section>
         </main>
+        
 
         <footer class="footer" role="contentinfo">
           <p>@2024</p>

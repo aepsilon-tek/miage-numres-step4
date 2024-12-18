@@ -64,13 +64,18 @@ Réponse: oui je suis capable de déterminer visuellement ce qui est un lien ou 
 Screen:![alt text](image.png)
 
 # Q17:  Proposition 1
-Description:
-Nb d'actions gagnée : 
+Description: Utilisation de aria-live pour les Feedbacks Automatiques pour annoncer automatiquement les changements sur la page comme les résultats du quiz ou les modifications de questions sans action
+
+Nb d'actions gagnée : 0 car concentration non sur le nb d'actions
 
 # Q18:  Proposition 2
-Description:
+Description:  
+Utilisation de la technologie de reconnaissance vocale pour permettre aux utilisateurs de naviguer et
+d'interagir avec le quiz en utilisant leur voix.
+
 Nb d'actions gagnée : 
 
 # Q19:  Proposition 3
 Description:
+Mettre quizz en premier de page et les liens sont a la fin comme ca le quizz apparait en premier et les liens en dernier du coup pas b esoin de tab enormement pour passer le quizz
 Nb d'actions gagnée : 
