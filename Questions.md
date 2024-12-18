@@ -17,10 +17,10 @@ Réponse: Il y a les roles navigation, main et button. Il y a les 3 propriétés
 Screen: ![alt text](image-1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
-Réponse:
+Réponse: La best practice de l'ARIA est "ne pas utiliser l'ARIA" est un rappel pour dire que le HTML sémantique doit toujours être la priorité. ARIA ne doit être utilisé que pour résoudre des lacunes spécifiques, et seulement si l'implémentation est bien pensée, testée, et réellement nécessaire.
 
 # Q8: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![alt text](image-2.png)
 
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
 Réponse:
