@@ -74,13 +74,13 @@ Réponse: Oui, on peut déterminer visuellement ce qui est un lien en appliquant
 Screen: ![Score 4 Lighthouse](image-2.png)
 
 # Q17:  Proposition 1
-Description:
-Nb d'actions gagnée : 
+Description: Implémenter une "live region" ARIA pour annoncer automatiquement les questions et mettre le focus sur la première réponse. Ajouter aria-live="assertive" sur le conteneur de questions et utiliser document.getElementById().focus() pour diriger l'attention.
+Nb d'actions gagnée : 8-10 actions, vu qu'on enlève les Tab entre les questions.
 
 # Q18:  Proposition 2
-Description:
-Nb d'actions gagnée : 
+Description: Ajouter des raccourcis clavier (touches 1-4) pour sélectionner directement les réponses sans utiliser Tab. Mettre en place des écouteurs d'événements keydown pour détecter les touches numériques. Ou sinon ajouter un raccourci avec un lien avant le titre de la page, le tout premier élément du DOM, donc quand on fait tab, c'est le premier élément, et il pourra être directement rediriger vers le quizz.
+Nb d'actions gagnée : 15-20 actions, vu qu'on peut directement sélectionner les réponses sans passer par Tab donc on enlève 3 à 4 tab par question.
 
 # Q19:  Proposition 3
-Description:
-Nb d'actions gagnée : 
+Description: Implémenter un système de navigation intelligente qui mémorise la progression et optimise le focus automatique. Utiliser le localStorage pour sauvegarder l'état et restaurer la position optimale du focus.
+Nb d'actions gagnée : 12-15 actions (élimination de la navigation redondante et optimisation du focus)

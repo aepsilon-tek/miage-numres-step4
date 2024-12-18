@@ -11,13 +11,13 @@ export async function initQuizz(questions) {
   quizzData = [];
   localStorage.clear();
   
-  questionElement = document.getElementById("question");
+  questionElement = document.getElementById("question"); // Assign to global variable
+  questionElement.setAttribute("aria-live", "assertive");
   proposalsElement = document.getElementById("proposals");
     
   currentQuestion = 0;
   score = 0;
 
-  
   quizzData = await getQuestionsApi();
     
   for (let i = 0; i < quizzData.length; i++) {
@@ -30,12 +30,16 @@ export async function initQuizz(questions) {
   
 async function showQuestion() {
   const question = quizzData[currentQuestion];
-  questionElement.innerText = question.label
   
+  // Now questionElement is accessible here
+  questionElement.innerText = question.label;
+  
+  // Clear and rebuild proposals
   proposalsElement.innerHTML = "";
   question.proposals.forEach(proposal => {
-    const button = document.createElement("button");
+    const button = document.createElement("button"); 
     button.innerText = proposal.label;
+    button.setAttribute("aria-label", proposal.label);
     proposalsElement.appendChild(button);
     button.addEventListener("click", selectAnswer);
   });
@@ -65,8 +69,11 @@ async function showResult() {
 
   score = await evaluate(newAnswers);
 
+  quiz.setAttribute("aria-live", "assertive");
   quiz.innerHTML = `
     <h1>Quizz Finis!</h1>
-    <p>Ton score: ${score}/${quizzData.length}</p>
+    <p role="status" aria-label="Votre score final est ${score} sur ${quizzData.length}">
+      Ton score: ${score}/${quizzData.length}
+    </p>
   `;
 }
