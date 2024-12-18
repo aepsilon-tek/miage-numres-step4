@@ -36,7 +36,9 @@ async function showQuestion() {
   question.proposals.forEach(proposal => {
     const button = document.createElement("button");
     button.innerText = proposal.label;
+    button.setAttribute("aria-pressed", "false");
     proposalsElement.appendChild(button);
+    button.setAttribute("aria-pressed", "true");
     button.addEventListener("click", selectAnswer);
   });
 }
