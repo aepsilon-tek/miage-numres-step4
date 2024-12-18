@@ -44,7 +44,7 @@ Screen:![alt text](image-3.png)
 Réponse: Non, on arrive pas à différencier les liens et le texte
 
 # Q16: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![alt text](image-4.png)
 
 # Q17:  Proposition 1
 Description:
