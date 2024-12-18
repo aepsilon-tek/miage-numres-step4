@@ -1,14 +1,17 @@
 # Q1: Quels sont les arguments que vous pouvez utiliser pour convaincre votre Client de rendre son quizz accessible ? (Vous pouvez vous aider du cour)
 Réponse:
+- Améliorer l'accessibilité de votre site web peut augmenter votre audience et votre clientèle. En effet, les personnes ayant des besoins spécifiques sont souvent exclues de l'accès à l'information et aux services en ligne. En rendant votre site web accessible, vous pouvez attirer un public plus large et augmenter votre clientèle.
 
 # Q2: Ajouter le screen de votre score :
 Screen:
+![alt text]({BC47DFC9-8137-4EC4-87FA-9F4DAD83B39B}.png)
 
 # Q3: Est-ce que l'analyse de Lighthouse est suffisante pour évaluer l'Accessibilité de votre Application ?
 Réponse:
+Non, l'analyse de Lighthouse n'est pas suffisante pour évaluer l'accessibilité de l'application. En effet, Lighthouse ne couvre pas tous les aspects de l'accessibilité, et il est important de réaliser des tests manuels pour s'assurer que l'application est accessible à tous les utilisateurs, y compris ceux ayant des besoins spécifiques.
 
 # Q4: Combien de fois vous devez utiliser une touche du clavier pour passer le quizz ?
-Réponse:
+Réponse: il faut utiliser 30 fois avec tab pour passer le quizz et les bonnes réponses.
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
