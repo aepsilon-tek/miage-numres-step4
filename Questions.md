@@ -1,15 +1,22 @@
 # Q1: Quels sont les arguments que vous pouvez utiliser pour convaincre votre Client de rendre son quizz accessible ? (Vous pouvez vous aider du cour)
 Réponse:
+1. Inclusivité et égalité des chances
+Un quiz accessible permet à tous les utilisateurs, y compris ceux ayant des handicaps (visuels, auditifs, cognitifs ou moteurs), d’y participer. Cela reflète une valeur fondamentale d’inclusion et d’égalité, ce qui renforce l’image de l’entreprise.
+2. Augmentation du public cible
+En rendant le quiz accessible, vous élargissez le public pouvant interagir avec votre contenu. Plus de participants signifie une plus grande visibilité, un impact plus important, et potentiellement plus de clients ou d’utilisateurs fidèles.
+
+
 
 # Q2: Ajouter le screen de votre score :
 Screen:
+![alt text](image.png)
 
 # Q3: Est-ce que l'analyse de Lighthouse est suffisante pour évaluer l'Accessibilité de votre Application ?
 Réponse:
-
+Non, l’analyse de Lighthouse n’est pas suffisante pour évaluer complètement l’accessibilité. 
 # Q4: Combien de fois vous devez utiliser une touche du clavier pour passer le quizz ?
 Réponse:
-
+33
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
 
