@@ -17,7 +17,6 @@ export async function initQuizz(questions) {
   currentQuestion = 0;
   score = 0;
 
-  
   quizzData = await getQuestionsApi();
     
   for (let i = 0; i < quizzData.length; i++) {
@@ -30,7 +29,7 @@ export async function initQuizz(questions) {
   
 async function showQuestion() {
   const question = quizzData[currentQuestion];
-  questionElement.innerText = question.label
+  questionElement.innerText = question.label;
   
   proposalsElement.innerHTML = "";
   question.proposals.forEach(proposal => {
@@ -47,7 +46,7 @@ async function selectAnswer(e) {
 
   for (let i = 0; i < proposals.length; i++) {
     if (selectedButton.innerText === proposals[i].label) {
-      saveAnswer(proposals[i])
+      saveAnswer(proposals[i]);
     }
   }
 
@@ -61,12 +60,15 @@ async function selectAnswer(e) {
   
 async function showResult() {
   let answers = getAnswers();
-  const newAnswers = answers.map(({label, ...id}) => id)
+  const newAnswers = answers.map(({ label, ...id }) => id);
 
   score = await evaluate(newAnswers);
 
-  quiz.innerHTML = `
+  const resultElement = document.getElementById('result');
+  resultElement.innerHTML = `
     <h1>Quizz Finis!</h1>
     <p>Ton score: ${score}/${quizzData.length}</p>
   `;
+  
+  // Le score sera maintenant annoncé automatiquement par le lecteur d'écran grâce à aria-live
 }
