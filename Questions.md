@@ -15,8 +15,19 @@ Réponse: 22 touches
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
 
+Rôles ARIA (Accessible Rich Internet Applications) :
+role="button" : Désigne un élément interactif qui agit comme un bouton.
+role="alert" : Signale une alerte importante à l'utilisateur, souvent utilisée pour afficher des messages d'erreur ou des notifications.
+role="navigation" : Définit une région de navigation, comme un menu ou une barre de navigation.
+Propriétés ARIA :
+aria-label : Fournit une étiquette textuelle personnalisée pour un élément, utile pour les lecteurs d'écran.
+aria-hidden : Indique si un élément est visible ou non aux technologies d'assistance.
+aria-expanded : Signale l'état (étendu ou réduit) d'un composant interactif comme un menu ou un accordéon.
+
 # Q6: Ajouter le screen de votre score Lighthouse
 Screen:
+
+![accessibilité2](image-1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
