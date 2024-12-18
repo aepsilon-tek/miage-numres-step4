@@ -86,6 +86,7 @@ Non, pas toujours
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-7.png)
 
 # Q17:  Proposition 1
 Description:
