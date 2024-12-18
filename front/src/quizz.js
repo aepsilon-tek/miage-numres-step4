@@ -7,6 +7,12 @@ export let score;
 let questionElement;
 let proposalsElement;
 
+function narrateText(text) {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'fr-FR';
+    speechSynthesis.speak(utterance);
+}
+
 export async function initQuizz(questions) {
   quizzData = [];
   localStorage.clear();
@@ -17,7 +23,6 @@ export async function initQuizz(questions) {
   currentQuestion = 0;
   score = 0;
 
-  
   quizzData = await getQuestionsApi();
     
   for (let i = 0; i < quizzData.length; i++) {
@@ -27,27 +32,32 @@ export async function initQuizz(questions) {
 
   showQuestion();
 }
-  
+
 async function showQuestion() {
   const question = quizzData[currentQuestion];
-  questionElement.innerText = question.label
+  questionElement.innerText = question.label;
+  narrateText(`Question ${currentQuestion + 1} : ${question.label}`);
   
   proposalsElement.innerHTML = "";
-  question.proposals.forEach(proposal => {
+  question.proposals.forEach((proposal, index) => {
     const button = document.createElement("button");
     button.innerText = proposal.label;
+    button.setAttribute("aria-label", `Réponse ${index + 1} : ${proposal.label}`);
     proposalsElement.appendChild(button);
+
     button.addEventListener("click", selectAnswer);
+    narrateText(`Réponse ${index + 1} : ${proposal.label}`);
   });
 }
-  
+
 async function selectAnswer(e) {
   const selectedButton = e.target;
   let proposals = quizzData[currentQuestion].proposals;
 
   for (let i = 0; i < proposals.length; i++) {
     if (selectedButton.innerText === proposals[i].label) {
-      saveAnswer(proposals[i])
+      saveAnswer(proposals[i]);
+      narrateText(`Vous avez choisi la réponse ${i + 1} : ${proposals[i].label}`);
     }
   }
 
@@ -58,10 +68,10 @@ async function selectAnswer(e) {
     showResult();
   }
 }
-  
+
 async function showResult() {
   let answers = getAnswers();
-  const newAnswers = answers.map(({label, ...id}) => id)
+  const newAnswers = answers.map(({label, ...id}) => id);
 
   score = await evaluate(newAnswers);
 
@@ -69,4 +79,6 @@ async function showResult() {
     <h1>Quizz Finis!</h1>
     <p>Ton score: ${score}/${quizzData.length}</p>
   `;
+
+  narrateText(`Le quiz est terminé. Votre score est de ${score} sur ${quizzData.length}.`);
 }
