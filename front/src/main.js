@@ -30,24 +30,30 @@ document.querySelector('#app').innerHTML = `
           <a alt="rss" href="#" class="fa fa-rss" aria-label="RSS"></a>
         </nav>
 
-        <div class="row" role="main">
-          <div class="leftcolumn" aria-labelledby="main-title">
-            <div class="card">
-              <h1 id="student-name">Nom étudiant</h1>
-              <h5 id="student-description">description</h5>
-              <div id="quiz" aria-live="polite" role="region" aria-labelledby="quiz-title">
-                <h2 id="quiz-title">A TOI DE JOUER</h2>
-                <div id="question" aria-live="assertive"></div>
-                <div id="proposals"></div>
-              </div>
-            </div>
-          </div>
-          <div class="rightcolumn">
-            <div class="card" aria-hidden="true">
-              <img alt="point d'interrogation" src="/question.png" width="500" height="600">
-            </div>
-          </div>
+        <main>
+    <section class="row">
+      <article class="leftcolumn">
+        <div class="card">
+          <h2>Nom étudiant</h2>
+          <p>Description</p>
+          <section id="quiz" aria-live="polite">
+            <h2>A TOI DE JOUER</h2>
+            <div id="question"></div>
+            <div id="proposals"></div>
+          </section>
         </div>
+      </article>
+      <aside class="rightcolumn">
+        <div class="card" aria-hidden="true">
+          <img src="/question.png" alt="Illustration de point d'interrogation" width="500" height="600">
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <h2>&copy; 2024</h2>
+  </footer>
 
         <footer class="footer" role="contentinfo">
           <h2>@2024</h2>

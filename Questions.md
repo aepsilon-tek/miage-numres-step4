@@ -30,10 +30,11 @@ Screen:
 ![accessibilité2](image-1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
-Réponse:
+Réponse: il faut previligié l'écriture du code html sémantique qui consiste à utiliser des éléments TML pour structurer le contenu en fonction de chaque élément et non de son apparence
 
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
+![access3](image-2.png)
 
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
 Réponse:
