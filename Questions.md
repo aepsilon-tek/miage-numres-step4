@@ -39,12 +39,21 @@ Screen:
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
+L'une des meilleures pratiques de l'ARIA est "ne pas utiliser l'ARIA" car, lorsque les éléments HTML sémantiques natifs sont correctement utilisés (comme <button>, <nav>, <header>), ils intègrent déjà les rôles et propriétés nécessaires pour les technologies d'assistance. Ajouter des attributs ARIA inutiles peut entraîner des comportements imprévus ou des redondances, rendant le site moins accessible. ARIA doit être utilisé uniquement lorsqu'il n'existe pas d'équivalent natif en HTML.
+
 
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
+![Image Q8](./Image2.png)
 
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
 Réponse:
+Le score de Lighthouse n'a pas augmenté car les modifications apportées ne couvrent pas tous les critères d'accessibilité. Par exemple :
+
+- Les problèmes liés à la navigation clavier ou au focus peuvent persister.
+- Des rôles ARIA inutiles ou mal utilisés peuvent entraîner des conflits.
+- Le contraste des couleurs et les alternatives textuelles peuvent ne pas être complètement optimisés.
+- Les balises HTML sémantiques doivent être correctement intégrées et testées pour s'assurer qu'elles sont reconnues par les technologies d'assistance.
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:

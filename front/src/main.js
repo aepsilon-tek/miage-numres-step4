@@ -2,13 +2,13 @@ import { initQuizz } from './quizz.js';
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
-        <div class="header" style="cursor:pointer;">
+        <header class="header" style="cursor:pointer;">
           <h1>My Quizz</h1>
-          Pour accéder a la page /about <a href="about/" style="text-decoration: none;">click ici</a>
-        </div>
+          <p>Pour accéder à la page <a href="about/" style="text-decoration: none;">/about</a></p>
+        </header>
 
 
-        <div class="topnav">
+        <nav class="topnav">
           <a href="#" class="fa fa-facebook" aria-label="Lien vers Facebook"></a>
           <a href="#" class="fa fa-twitter" aria-label="Lien vers twitter"></a>
           <a href="#" class="fa fa-google" aria-label="Lien vers google"></a>
@@ -29,29 +29,33 @@ document.querySelector('#app').innerHTML = `
           <a href="#" class="fa fa-yahoo" aria-label="Lien vers Yahoo"></a>
           <a href="#" class="fa fa-reddit" aria-label="Lien vers reddit"></a>
           <a href="#" class="fa fa-rss" aria-label="Lien vers rss"></a>
-        </div>
+        </nav>
 
-        <div class="row">
-          <div class="leftcolumn">
-            <div class="card">
-              <h1>Nom étudiant</h1>
-              <h5>description</h5>
-              <div id="quiz">
-                <h2>A TOI DE JOUER</h2>
-                <div id="question"></div>
-                <div id="proposals"></div>
+        <main>
+          <section class="row">
+            <section class="leftcolumn">
+              <article class="card">
+                <h1>Nom étudiant</h1>
+                <h5>Description</h5>
+                <div id="quiz">
+                  <h2>A TOI DE JOUER</h2>
+                  <div id="question"></div>
+                  <div id="proposals"></div>
+                </div>
+              </article>
+            </section>
+            <aside class="rightcolumn">
+              <div class="card">
+                <img src="/question.png" width="500" height="600" alt="Illustration du quizz avec un point d'interrogation">
               </div>
-            </div>
-          </div>
-          <div class="rightcolumn">
-            <div class="card">
-              <img src="/question.png" width="500" height="600" alt="Image d'un point d'interrogation pour le quizz">
-            </div>
-        </div>
+            </aside>
+          </section>
+        </main>
 
-        <div class="footer">
+
+        <footer class="footer">
           <h2>@2024</h2>
-        </div>
+        </footer>
 `
 
 initQuizz();
