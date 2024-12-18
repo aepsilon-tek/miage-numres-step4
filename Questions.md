@@ -85,6 +85,7 @@ OUI
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
+![Image Q14](./Image3.png)
 
 # Q17:  Proposition 1
 Description:
