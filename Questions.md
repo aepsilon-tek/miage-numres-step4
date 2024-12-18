@@ -32,12 +32,14 @@ Screen:
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
+L'une des meilleures pratiques de l'ARIA est de ne pas l'utiliser lorsque ce n'est pas nécessaire. En effet, les éléments HTML natifs sont déjà accessibles et supportés par les technologies d'assistance. Utiliser ARIA de manière incorrecte peut introduire des problèmes d'accessibilité supplémentaires. Il est donc recommandé de s'appuyer sur les éléments HTML natifs autant que possible et de n'utiliser ARIA que lorsque cela est absolument nécessaire pour améliorer l'accessibilité.
 
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
-
+![alt text]({F8A9E896-39DC-45F6-AEAE-18F8A51F1B46}.png)
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
 Réponse:
+Le score de Lighthouse n'a pas augmenté car il y a encore des problèmes d'accessibilité non résolus sur le site web. Il est important de corriger tous les problèmes d'accessibilité identifiés par Lighthouse pour améliorer le score et rendre le site web accessible à tous les utilisateurs.Meme au niveau des couleurs, il y a des problèmes de contraste qui n'ont pas été résolus.
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
