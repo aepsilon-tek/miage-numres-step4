@@ -4,7 +4,7 @@ import './style.css';
 document.querySelector('#app').innerHTML = `
         <header class="header" style="cursor:pointer;" role="banner">
           <h1>My Quizz</h1>
-          Pour accéder a la page /about <a href="about/" style="text-decoration: none;">click ici</a>
+          Pour accéder a la page  <a href="about/">/about</a>
         </header>
 
 
@@ -35,7 +35,7 @@ document.querySelector('#app').innerHTML = `
           <div class="leftcolumn">
             <div class="card">
               <h1>Nom étudiant</h1>
-              <h5>description</h5>
+              <h2>description</h5>
               <div id="quiz" aria-labelledby="quiz-title">
                 <h2 id="quiz-title">À TOI DE JOUER</h2>
                 <div id="question"></div>
