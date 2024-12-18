@@ -7,7 +7,7 @@ export let score;
 let questionElement;
 let proposalsElement;
 
-export async function initQuizz(questions) {
+export async function initQuizz() {
   quizzData = [];
   localStorage.clear();
   
@@ -17,7 +17,6 @@ export async function initQuizz(questions) {
   currentQuestion = 0;
   score = 0;
 
-  
   quizzData = await getQuestionsApi();
     
   for (let i = 0; i < quizzData.length; i++) {
@@ -30,7 +29,7 @@ export async function initQuizz(questions) {
   
 async function showQuestion() {
   const question = quizzData[currentQuestion];
-  questionElement.innerText = question.label
+  questionElement.innerText = question.label;
   
   proposalsElement.innerHTML = "";
   question.proposals.forEach(proposal => {
@@ -47,7 +46,7 @@ async function selectAnswer(e) {
 
   for (let i = 0; i < proposals.length; i++) {
     if (selectedButton.innerText === proposals[i].label) {
-      saveAnswer(proposals[i])
+      saveAnswer(proposals[i]);
     }
   }
 
@@ -61,7 +60,7 @@ async function selectAnswer(e) {
   
 async function showResult() {
   let answers = getAnswers();
-  const newAnswers = answers.map(({label, ...id}) => id)
+  const newAnswers = answers.map(({label, ...id}) => id);
 
   score = await evaluate(newAnswers);
 
@@ -69,4 +68,11 @@ async function showResult() {
     <h1>Quizz Finis!</h1>
     <p>Ton score: ${score}/${quizzData.length}</p>
   `;
+}
+
+export function focusCurrentQuestion() {
+  const quizSection = document.getElementById("quiz");
+  if (quizSection) {
+    quizSection.focus();
+  }
 }

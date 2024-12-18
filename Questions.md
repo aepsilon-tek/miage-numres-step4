@@ -63,7 +63,9 @@ Nb d'actions gagnée :
 
 # Q18:  Proposition 2
 Description:
+    Mettre en place un raccourci clavier (Espace) pour permettre à l'utilisateur de déplacer automatiquement le focus vers la section du quiz dès le chargement de la page. Cela améliore l'accessibilité en réduisant la nécessité pour l'utilisateur de naviguer manuellement à l'aide de la touche "Tab" ou d'autres interactions.
 Nb d'actions gagnée : 
+    1 action par utilisateur au début du quiz, car ils n'auront pas besoin de tabuler plusieurs fois pour atteindre la section du quiz. Si plusieurs utilisateurs utilisent fréquemment la fonctionnalité, cela pourrait représenter un gain significatif dans un contexte répétitif.
 
 # Q19:  Proposition 3
 Description:

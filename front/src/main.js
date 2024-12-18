@@ -1,4 +1,4 @@
-import { initQuizz } from './quizz.js';
+import { initQuizz, focusCurrentQuestion } from './quizz.js';
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
@@ -6,6 +6,10 @@ document.querySelector('#app').innerHTML = `
           <h1>My Quizz</h1>
           <p>Pour accéder à la page <a href="about/" style="text-decoration: none;" aria-label="Page À propos" class="accessible-link">Page À propos</a></p>
         </header>
+
+        <div id="shortcut-message" aria-live="assertive" style="position: absolute; top: -9999px;">
+          Cliquez sur espace pour aller directement au quizz.
+        </div>
 
         <nav class="topnav" aria-label="Liens vers les réseaux sociaux">
           <a href="#" class="fa fa-facebook accessible-link" aria-label="Lien vers Facebook" title="Visitez notre page Facebook"></a>
@@ -35,7 +39,7 @@ document.querySelector('#app').innerHTML = `
             <article class="card" aria-label="Carte d'information de l'étudiant">
               <h1>Nom étudiant</h1>
               <h5>Description</h5>
-              <section id="quiz" role="region" aria-labelledby="quiz-title" aria-live="assertive">
+              <section id="quiz" role="region" aria-labelledby="quiz-title" aria-live="assertive" tabindex="-1">
                 <h2 id="quiz-title">A TOI DE JOUER</h2>
                 <div id="question" aria-live="polite"></div>
                 <div id="proposals" aria-live="polite" tabindex="-1"></div>
@@ -54,11 +58,13 @@ document.querySelector('#app').innerHTML = `
         </footer>
 
         <script>
-          document.getElementById('quiz-title').focus({ focusVisible: true });
-
-          function focusProposals() {
-            document.getElementById('proposals').focus();
-          }
+          // Ajout du raccourci clavier
+          window.addEventListener('keydown', (event) => {
+            if (event.code === 'Space' || event.key === ' ') {
+              event.preventDefault();
+              focusCurrentQuestion();
+            }
+          });
         </script>
 `;
 
