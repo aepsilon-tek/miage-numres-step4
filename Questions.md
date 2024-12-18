@@ -67,16 +67,16 @@ Réponse:
 En appliquant les altérations comme la vision floue, le daltonisme ou l'achromatopsie dans l'onglet "Émuler les déficiences visuelles", il devient très difficile, voire impossible, de distinguer visuellement les liens s’ils ne sont pas bien stylés. Les liens qui dépendent uniquement de la couleur, sans soulignement ou indice visuel supplémentaire, sont indiscernables, notamment avec un faible contraste ou en nuances de gris. Pour garantir leur accessibilité, il est essentiel d'utiliser des indicateurs visuels clairs (soulignement, contraste élevé) et des attributs comme aria-label pour une meilleure prise en charge par les technologies d’assistance.
 
 # Q16: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen:![alt text](image-5.png)
 
 # Q17:  Proposition 1
-Description:
-Nb d'actions gagnée : 
+Description: En utilisant aria-live="assertive" sur les éléments dynamiques (comme les questions ou propositions mises à jour dans le quiz), le lecteur d'écran est automatiquement informé des changements. Cela permet de réduire le besoin pour l'utilisateur de naviguer manuellement vers ces éléments pour en prendre connaissance.
+Nb d'actions gagnée : 1 action par question mise à jour (évite la navigation manuelle vers la question).
 
 # Q18:  Proposition 2
-Description:
-Nb d'actions gagnée : 
+Description: L'ajout de tabindex permet de structurer l'ordre de navigation au clavier. Par exemple, on peut forcer le focus sur les éléments essentiels (comme le bouton de soumission) et éviter les éléments moins importants (comme les images décoratives).
+Nb d'actions gagnée : 1 action par élément non prioritaire (comme une image ignorée). 
 
 # Q19:  Proposition 3
-Description:
-Nb d'actions gagnée : 
+Description: Lorsque le quiz passe à la question suivante, le focus peut être déplacé automatiquement vers la nouvelle question, réduisant le besoin pour l'utilisateur de naviguer manuellement.
+Nb d'actions gagnée : 1 action par question (évite à l'utilisateur de tabuler pour trouver la nouvelle question).

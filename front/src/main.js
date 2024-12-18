@@ -6,17 +6,17 @@ document.querySelector('#app').innerHTML = `
     <h1>My Quizz</h1>
     <p>
       Pour accéder à la page 
-      <a href="about/" style="text-decoration: none;" aria-label="Accéder à la page À propos">cliquez ici</a>
+      <a href="about/" style="text-decoration: underline;" aria-label="Accéder à la page À propos de My Quizz">Page À propos</a>
     </p>
   </header>
 
   <nav class="topnav" aria-label="Liens vers les réseaux sociaux">
-    <a href="#" class="fa fa-facebook" aria-label="Lien vers Facebook"></a>
-    <a href="#" class="fa fa-twitter" aria-label="Lien vers Twitter"></a>
-    <a href="#" class="fa fa-google" aria-label="Lien vers Google"></a>
-    <a href="#" class="fa fa-linkedin" aria-label="Lien vers LinkedIn"></a>
-    <a href="#" class="fa fa-youtube" aria-label="Lien vers YouTube"></a>
-    <a href="#" class="fa fa-instagram" aria-label="Lien vers Instagram"></a>
+    <a href="#" class="fa fa-facebook" aria-label="Accéder à notre page Facebook"></a>
+    <a href="#" class="fa fa-twitter" aria-label="Accéder à notre page Twitter"></a>
+    <a href="#" class="fa fa-google" aria-label="Accéder à notre page Google"></a>
+    <a href="#" class="fa fa-linkedin" aria-label="Accéder à notre page LinkedIn"></a>
+    <a href="#" class="fa fa-youtube" aria-label="Accéder à notre chaîne YouTube"></a>
+    <a href="#" class="fa fa-instagram" aria-label="Accéder à notre page Instagram"></a>
   </nav>
 
   <main class="row">
@@ -64,6 +64,10 @@ style.textContent = `
   }
   a:focus, button:focus {
     outline: 3px solid #007BFF;
+  }
+  a {
+    text-decoration: underline;
+    color: #007BFF;
   }
 `;
 document.head.appendChild(style);

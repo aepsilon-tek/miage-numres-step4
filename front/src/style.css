@@ -21,6 +21,10 @@ body {
   font-size: 50px;
 }
 
+.header a {
+  color: #c8e3ff;
+}
+
 .topnav {
   display:flex;
   justify-content: center;
