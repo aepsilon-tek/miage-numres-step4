@@ -65,7 +65,7 @@ Screen: Screen: ![Capture d'écran Q8](./photoQ14.png)
 Réponse: En vrai oui , un peu plus compliqué pour le floue mais c'est ok
 
 # Q16: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: Je l'avais déjà faire voir les photos précédente 
 
 # Q17:  Proposition 1
 Description:
