@@ -10,16 +10,16 @@ let proposalsElement;
 export async function initQuizz(questions) {
   quizzData = [];
   localStorage.clear();
-  
+
   questionElement = document.getElementById("question");
   proposalsElement = document.getElementById("proposals");
-    
+
   currentQuestion = 0;
   score = 0;
 
-  
+
   quizzData = await getQuestionsApi();
-    
+
   for (let i = 0; i < quizzData.length; i++) {
     let proposals = await getProposalApi(quizzData[i].id);
     quizzData[i].proposals = proposals;
@@ -27,11 +27,15 @@ export async function initQuizz(questions) {
 
   showQuestion();
 }
-  
+
 async function showQuestion() {
   const question = quizzData[currentQuestion];
-  questionElement.innerText = question.label
+  const newElement = document.createElement('p');
+  newElement.setAttribute('aria-label', question.label);
+  newElement.textContent = question.label;
   
+  questionElement.appendChild(newElement);
+
   proposalsElement.innerHTML = "";
   question.proposals.forEach(proposal => {
     const button = document.createElement("button");
@@ -40,7 +44,7 @@ async function showQuestion() {
     button.addEventListener("click", selectAnswer);
   });
 }
-  
+
 async function selectAnswer(e) {
   const selectedButton = e.target;
   let proposals = quizzData[currentQuestion].proposals;
@@ -58,10 +62,10 @@ async function selectAnswer(e) {
     showResult();
   }
 }
-  
+
 async function showResult() {
   let answers = getAnswers();
-  const newAnswers = answers.map(({label, ...id}) => id)
+  const newAnswers = answers.map(({ label, ...id }) => id)
 
   score = await evaluate(newAnswers);
 

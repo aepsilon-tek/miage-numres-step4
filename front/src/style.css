@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;  
   background: purple;
-  color:grey;
+  color:#b5b5b5;
 }
 
 body {
@@ -19,6 +19,10 @@ body {
 
 .header h1 {
   font-size: 50px;
+}
+
+.header a{
+  color: white;
 }
 
 .topnav {
