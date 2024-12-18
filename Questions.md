@@ -13,10 +13,12 @@ Réponse: Lighthouse est un bon point de départ pour détecter les erreurs d’
 Réponse: On doit utiliser environ 23 fois la touche tab pour accéder aux éléments du questionnaire et faire entrée plusieurs fois. C'est beaucoup ...
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
-Réponse: 
+Réponse: Les rôles ARIA tels que button (pour transformer un élément en bouton interactif), alert (pour signaler un message prioritaire) et dialog (pour indiquer une boîte de dialogue modale) permettent d’améliorer la compréhension des interfaces par les lecteurs d’écran, tandis que les propriétés ARIA comme aria-label (pour fournir une description alternative), aria-hidden (pour masquer un élément des technologies d’assistance) et aria-expanded (pour indiquer l’état d’expansion d’un menu ou d’un accordéon) offrent des indications supplémentaires sur l’état et le comportement des composants interactifs.
 
 # Q6: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: 
+
+![score de 93 en accessibilité](image-3.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
