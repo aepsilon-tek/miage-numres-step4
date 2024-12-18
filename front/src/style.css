@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;  
   background: purple;
-  color:grey;
+  color:rgb(181, 181, 181);
 }
 
 body {
@@ -225,3 +225,5 @@ button:hover {
   background: #ff6600;
   color: purple;
 }
+
+
