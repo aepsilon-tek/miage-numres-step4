@@ -89,19 +89,25 @@ Réponse:
 
 # Q11: Quel est la valeur du score AA :
 Réponse:
-
+La valeur du score AA correspond à un rapport de contraste de 4.5:1 pour le texte normal et 3:1 pour le texte large.
 # Q12: Quel est la valeur du score AAA :
 Réponse:
-
+La valeur du score AAA correspond à un rapport de contraste de 7:1 pour le texte normal et 4.5:1 pour le texte large.
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
 Réponse:
+Modifier la couleur du texte et de l’arrière-plan dans le fichier CSS afin d'augmenter la différence entre les deux :
 
 # Q14: Ajouter le screen de votre score Lighthouse
 Screen:
-
+![alt text](image-3.png)
+Par exemple, au lieu d'utiliser la couleur gray, j'ai utilisé le code couleur #b5b5b5 pour obtenir un meilleur contraste.
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:
+Non, il devient difficile de déterminer visuellement ce qui est un lien ou non après avoir appliqué les altérations des déficiences visuelles. Par exemple :
 
+Vision floue : Les textes et les icônes deviennent indistincts, rendant les liens peu visibles.
+Achromatopsie (absence de couleurs) : Sans la couleur pour différencier les liens, il est difficile de les distinguer du texte ordinaire.
+Daltonisme (Protanopie, Deutéranopie, Tritanopie) : Les liens qui se différencient uniquement par la couleur ne sont plus reconnaissables.
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
 
