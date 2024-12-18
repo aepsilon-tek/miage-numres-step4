@@ -30,7 +30,7 @@ aria-hidden : Indique si un élément doit être ignoré par les technologies d�
 aria-live : Informe que le contenu d’un élément doit être mis à jour dynamiquement et annoncé par les lecteurs d’écran 
 
 # Q6: Ajouter le screen de votre score Lighthouse
-Screen: Screen:![Capture d'écran](assets/image1.png)
+Screen: ![Capture d'écran](assets/image1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 reponse : L’ARIA doit être utilisée seulement si les éléments HTML sémantiques ne suffisent pas.
@@ -41,36 +41,36 @@ HTML sémantique est naturellement accessible : Les balises comme <header>, <sec
 et Un mauvais usage de l’ARIA peut nuire à l’accessibilité.
 
 # Q8: Ajouter le screen de votre score Lighthouse
-Screen:  Screen:![Capture d'écran](assets/image2.png)
+Screen:  ![Capture d'écran](assets/image2.png)
 
 
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
 Réponse: le score a changé vu que ça change l 'hircherarchie de mon code HTML ( ça permet au reader d'identifier quoi lire en premier )
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
-Réponse:   Screen:![Capture d'écran](assets/image3.png)
+Réponse:   ![Capture d'écran](assets/image3.png)
 
 
 # Q11 et 12: Quel est la valeur du score AA :
-Réponse:  Screen:![Capture d'écran](assets/image4.png)
+Réponse:  ![Capture d'écran](assets/image4.png)
 
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
 Réponse:Je change la couleur du texte (color) et du fond (background-color) dans le CSS.
 
 # Q14: Ajouter le screen de votre score Lighthouse
-Screen: Screen:![Capture d'écran](assets/image5.png)
+Screen:![Capture d'écran](assets/image5.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:Non, il est difficile de déterminer ce qui est un lien avec certaines altérations visuelles comme le flou ou troubles ....
 
 
 # Q16: Ajouter le screen de votre score Lighthouse
-Screen: Screen:![Capture d'écran](assets/image 6.png)
+ Screen: ![Capture d'écran](assets/image 6 .png)
 
 # Q17:  Proposition 1
 Description:
-Nb d'actions gagnée : 
+Nb d'actions gagnée :  
 
 # Q18:  Proposition 2
 Description:
