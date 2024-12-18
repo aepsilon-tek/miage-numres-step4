@@ -75,9 +75,12 @@ Réponse:
 
 # Q14: Ajouter le screen de votre score Lighthouse
 Screen:
+![Capture d'écran](assets/score_eco_5.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:
+Pour la question 
+Oui, je peux évaluer visuellement ce qui est un lien et ce qui ne l'est pas après les modifications apportées. Cependant, pour les personnes ayant une vision floue ou un contraste réduit, il peut être difficile de distinguer les liens du reste du texte si le contraste n'est pas suffisamment élevé. En revanche, pour les types de daltonisme, l'application d'un schéma monochrome semble efficace, car cela permet d'uniformiser les couleurs tout en conservant les distinctions par luminosité, facilitant ainsi la perception des différents éléments interactifs.
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
