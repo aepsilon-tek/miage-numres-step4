@@ -21,16 +21,24 @@ Screen:
 ![score de 93 en accessibilité](image-3.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
-Réponse:
+Réponse: Les balises HTML natives (<button>, <a>, <input>, etc.) sont déjà bien prises en charge par les lecteurs d’écran et les technologies d’assistance. Ces balises possèdent par défaut des rôles et des propriétés implicites. 
+Par exemple :
+- Un bouton (<button>) est automatiquement perçu comme un role=“button” par les lecteurs d’écran.
+- Un lien (<a>) est automatiquement identifié comme un role=“link”.
+- Une case à cocher (<input type="checkbox">) est déjà reconnue comme un composant interactif.
+
+Si on commence à ajouter des rôles ARIA sur ces balises, on risque de redéfinir inutilement le rôle natif de l’élément, ce qui peut confondre les lecteurs d’écran.
 
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
 
+![score de 98 en accessibilité](image-2.png)
+
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
-Réponse:
+Réponse: Du coup ca a augmenté haha.
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
-Réponse:
+Réponse: 
 
 # Q11: Quel est la valeur du score AA :
 Réponse:
