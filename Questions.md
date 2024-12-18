@@ -51,25 +51,27 @@ Screen: ![Score 3 Lighthouse](image-2.png)
 Réponse: **NE PAS REPONDRE**
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
-Réponse:
+J'avais déjà modifié le contraste pour le rendre plus accessible, voici le screen de l'audit Lighthouse précédent.
+Page du site maintenant: ![alt text](image-4.png)
+Réponse: ![Contraste rapport](image-3.png)
 
 # Q11: Quel est la valeur du score AA :
-Réponse:
+Réponse: Le score AA pour le contraste de couleur est de 4.5:1 pour le texte normal et 3:1 pour le texte en gras ou de grande taille. Il est recommandé de respecter ces valeurs pour garantir une accessibilité optimale.
 
 # Q12: Quel est la valeur du score AAA :
-Réponse:
+Réponse: Le score AAA pour le contraste de couleur est de 7:1 pour le texte normal et 4.5:1 pour le texte en gras ou de grande taille. Il est recommandé de respecter ces valeurs pour atteindre un niveau d'accessibilité supérieur.
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
-Réponse:
+Réponse: Pour changer la valeur du contraste du texte, vous pouvez ajuster les couleurs du texte et de l'arrière-plan pour respecter les ratios de contraste recommandés. Fond blanc et texte noir.
 
 # Q14: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![Score 4 Lighthouse](image-2.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
-Réponse:
+Réponse: Oui, on peut déterminer visuellement ce qui est un lien en appliquant différentes altérations, comme le changement de couleur, de soulignement, de style de police ou d'icône. Ces altérations visuelles permettent de distinguer clairement les liens des autres éléments interactifs et de faciliter la navigation pour les utilisateurs.
 
 # Q16: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![Score 4 Lighthouse](image-2.png)
 
 # Q17:  Proposition 1
 Description:
