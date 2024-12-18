@@ -1,46 +1,45 @@
-
-
 * {
-  box-sizing: border-box;  
-  background: purple;
-  color:grey;
+  box-sizing: border-box;
+  background: #000000; /* Fond noir */
+  color: #FFFFFF; /* Texte blanc */
 }
 
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   padding: 10px;
 }
 
 .header {
   padding: 30px;
   text-align: center;
-  background: purple;
+  background: #000000; /* Fond noir */
 }
 
 .header h1 {
   font-size: 50px;
+  color: #FFFFFF; /* Texte blanc */
 }
 
 .topnav {
-  display:flex;
+  display: flex;
   justify-content: center;
   overflow: hidden;
-  background: purple;
+  background: #000000; /* Fond noir */
 }
 
 .topnav a {
-  color: #f2f2f2;
+  color: #FFFFFF; /* Texte blanc */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .topnav a:hover {
-  background: purple;
-  color: black;
+  background: #FFFFFF; /* Survol blanc */
+  color: #000000; /* Texte noir */
 }
 
-.leftcolumn {   
+.leftcolumn {
   float: left;
   width: 75%;
 }
@@ -48,14 +47,16 @@ body {
 .rightcolumn {
   float: left;
   width: 25%;
-  background-color: purple;
+  background-color: #000000; /* Fond noir */
   padding-left: 20px;
 }
 
 .card {
-  background-color: purple;
+  background-color: #000000; /* Fond noir */
   padding: 20px;
   margin-top: 20px;
+  border: 1px solid #FFFFFF; /* Bordure blanche */
+  border-radius: 5px;
 }
 
 .row::after {
@@ -64,26 +65,28 @@ body {
   clear: both;
 }
 
-
 .footer {
   padding: 20px;
   text-align: center;
-  background: purple;
+  background: #000000; /* Fond noir */
+  color: #FFFFFF; /* Texte blanc */
   margin-top: 20px;
 }
 
 #quiz {
   margin: 0 auto;
   padding: 20px;
-  background: purple;
+  background: #000000; /* Fond noir */
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(198, 222, 60, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Ombre blanche subtile */
   text-align: center;
+  color: #FFFFFF; /* Texte blanc */
 }
 
 #question {
   margin-bottom: 20px;
   text-align: center;
+  color: #FFFFFF; /* Texte blanc */
 }
 
 #proposals {
@@ -96,15 +99,15 @@ button {
   display: block;
   margin: 0 auto;
   padding: 10px 20px;
-  background-color: rgb(227, 238, 10);
-  color: #131313;
+  background-color: #FFD700; /* Jaune */
+  color: #000000; /* Texte noir */
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #8f8d8d;
+  background-color: #E1AD01; /* Jaune plus foncé */
 }
 
 .fa {
@@ -114,10 +117,11 @@ button:hover {
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+  color: #FFFFFF; /* Couleur blanche pour un bon contraste */
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {

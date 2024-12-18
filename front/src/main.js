@@ -8,33 +8,33 @@ document.querySelector('#app').innerHTML = `
         </header>
 
         <div class="topnav">
-          <a href="#" alt="logo facebook" class="fa fa-facebook"></a>
-          <a href="#" alt="logo twitter" class="fa fa-twitter"></a>
-          <a href="#" alt="logo google" class="fa fa-google"></a>
-          <a href="#" alt="logo linkedin" class="fa fa-linkedin"></a>
-          <a href="#" alt="logo youtube" class="fa fa-youtube"></a>
-          <a href="#" alt="logo instagram" class="fa fa-instagram"></a>
-          <a href="#" alt="logo pinterest" class="fa fa-pinterest"></a>
-          <a href="#" alt="logo snapshat" class="fa fa-snapchat-ghost"></a>
-          <a href="#" alt="logo skype" class="fa fa-skype"></a>
-          <a href="#" alt="logo android" class="fa fa-android"></a>
-          <a href="#" alt="logo dribbble" class="fa fa-dribbble"></a>
-          <a href="#" alt="logo vimeo" class="fa fa-vimeo"></a>
-          <a href="#" alt="logo tumblr" class="fa fa-tumblr"></a>
-          <a href="#" alt="logo vine" class="fa fa-vine"></a>
-          <a href="#" alt="logo foursquare" class="fa fa-foursquare"></a>
-          <a href="#" alt="logo stumbleupon" class="fa fa-stumbleupon"></a>
-          <a href="#" alt="logo flickr" class="fa fa-flickr"></a>
-          <a href="#" alt="logo yahoo" class="fa fa-yahoo"></a>
-          <a href="#" alt="logo reddit" class="fa fa-reddit"></a>
-          <a href="#" alt="logo rss" class="fa fa-rss"></a>
+          <a href="#" class="fa fa-facebook" aria-label="logo facebook"></a>
+          <a href="#" class="fa fa-twitter" aria-label="logo twitter"></a>
+          <a href="#" class="fa fa-google" aria-label="logo google"></a>
+          <a href="#" class="fa fa-linkedin" aria-label="logo linkedin"></a>
+          <a href="#" class="fa fa-youtube" aria-label="logo youtube"></a>
+          <a href="#" class="fa fa-instagram" aria-label="logo instagram"></a>
+          <a href="#" class="fa fa-pinterest" aria-label="logo pinterest"></a>
+          <a href="#" class="fa fa-snapchat-ghost" aria-label="logo snapchat"></a>
+          <a href="#" class="fa fa-skype" aria-label="logo skype"></a>
+          <a href="#" class="fa fa-android" aria-label="logo android"></a>
+          <a href="#" class="fa fa-dribbble" aria-label="logo dribbble"></a>
+          <a href="#" class="fa fa-vimeo" aria-label="logo vimeo"></a>
+          <a href="#" class="fa fa-tumblr" aria-label="logo tumblr"></a>
+          <a href="#" class="fa fa-vine" aria-label="logo vine"></a>
+          <a href="#" class="fa fa-foursquare" aria-label="logo foursquare"></a>
+          <a href="#" class="fa fa-stumbleupon" aria-label="logo stumbleupon"></a>
+          <a href="#" class="fa fa-flickr" aria-label="logo flickr"></a>
+          <a href="#" class="fa fa-yahoo" aria-label="logo yahoo"></a>
+          <a href="#" class="fa fa-reddit" aria-label="logo reddit"></a>
+          <a href="#" class="fa fa-rss" aria-label="logo rss"></a>
         </div>
 
          <main class="row">
     <section class="leftcolumn">
       <article class="card">
         <h1>Nom étudiant</h1>
-        <h5>Description</h5>
+        <h2>Description</h2>
         <div id="quiz">
           <h2>A TOI DE JOUER</h2>
           <div id="question"></div>
