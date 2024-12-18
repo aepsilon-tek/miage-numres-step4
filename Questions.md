@@ -69,10 +69,13 @@ Pour améliorer le contraste, il faut :
 
 # Q14: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-3.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:
-
+Non, en appliquant les altérations de vision (vision floue, contraste réduit, et déficiences des couleurs), il devient difficile de déterminer visuellement ce qui est un lien ou non, surtout si :
+- Les liens n'ont pas de soulignement ou autre distinction visuelle (comme une couleur différente ou un effet au survol).
+- Le contraste est insuffisant entre les liens et le texte normal
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
 
