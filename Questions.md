@@ -1,14 +1,27 @@
 # Q1: Quels sont les arguments que vous pouvez utiliser pour convaincre votre Client de rendre son quizz accessible ? (Vous pouvez vous aider du cour)
-Réponse:
+Réponse: - Égalité d’accès et opportunité : L’accessibilité offre une égalité d’accès à l’information et des opportunités équitables à tous les utilisateurs, y compris ceux en situation de handicap.
+- Augmentation du trafic et des conversions : En rendant l'application accessible, vous touchez un public plus large, ce qui peut augmenter le trafic et les conversions sur le site.
+- Conformité légale : De nombreux pays imposent des standards d’accessibilité numérique (par exemple, les normes WCAG 2.0 avec un niveau de conformité minimum AA recommandé par l’Union européenne).
+- Amélioration de l’expérience utilisateur : Les meilleures pratiques d’accessibilité, comme un bon contraste, profitent à tous les utilisateurs, pas seulement à ceux avec des besoins spécifiques.
+- Compatibilité avec les futurs logiciels : En suivant les normes, votre application sera compatible avec les outils et technologies actuels et futurs.
+
 
 # Q2: Ajouter le screen de votre score :
 Screen:
+![alt text](image.png)
 
 # Q3: Est-ce que l'analyse de Lighthouse est suffisante pour évaluer l'Accessibilité de votre Application ?
 Réponse:
+Non, l’analyse de Lighthouse n’est pas suffisante pour évaluer complètement l’accessibilité. Voici pourquoi :
+
+- Limites des outils automatisés : Lighthouse ne détecte que des problèmes mesurables automatiquement (par exemple, contraste, balises alt manquantes). Les problèmes plus contextuels nécessitent des tests humains.
+- Tests utilisateurs nécessaires : Les tests manuels, comme l’utilisation de lecteurs d’écran (ex. VoiceOver, NVDA) ou des scénarios d’interaction réels, sont indispensables pour garantir une accessibilité optimale.
+- Vérification des interactions : Lighthouse ne teste pas directement la navigation clavier ou les interactions dynamiques complexes.
 
 # Q4: Combien de fois vous devez utiliser une touche du clavier pour passer le quizz ?
 Réponse:
+Il faut utiliser 33 fois une touche du clavier pour compléter le quizz.
+
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
