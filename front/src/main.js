@@ -45,7 +45,7 @@ document.querySelector('#app').innerHTML = `
           
           <aside class="rightcolumn">
             <article class="card">
-              <img src="/question.png" alt="Illustration représentant une question de quiz" width="500" height="600">
+              <img src="/question.png" alt="Image décorative représentant une question" width="500" height="600">
             </article>
           </aside>
         </main>
@@ -53,9 +53,13 @@ document.querySelector('#app').innerHTML = `
         <footer class="footer">
           <h2>@2024</h2>
         </footer>
+
+        <!-- Zone pour afficher le score avec aria-live -->
+        <div id="result" aria-live="assertive" role="alert"></div>
 `;
 
 initQuizz();
+
 
 // Ajout du style CSS pour la gestion du focus visible
 const style = document.createElement('style');
