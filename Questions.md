@@ -11,10 +11,10 @@ Réponse: Non, voici prq : Incapacité à détecter des problèmes complexes, Te
 Réponse: 22
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
-Réponse:
+Réponse: button, alert, dialog & aria-label, aria-hidden, aria-expanded
 
 # Q6: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![alt text](image-1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
