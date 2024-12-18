@@ -113,13 +113,23 @@ Screen:
 ![alt text](image-5.png)
 Le score de 100.
 # Q17:  Proposition 1
-Description:
-Nb d'actions gagnée : 
+Ajout de l'attribut aria-live="polite" à l'élément contenant les questions, ce qui permet aux lecteurs d'écran d'annoncer automatiquement les nouvelles questions lorsqu'elles apparaissent. Cette amélioration facilite l'interaction des utilisateurs de technologies d’assistance en réduisant le nombre d'actions nécessaires, car :
 
+Les utilisateurs n'ont plus à naviguer jusqu'à l'élément pour entendre la question.
+Les mises à jour de la question sont détectées et lues de manière automatique.
+Nombre d'actions supprimées :
+1 à 2 actions par question, soit une réduction totale de 10 à 20 actions sur un quiz de 10 questions.
 # Q18:  Proposition 2
-Description:
-Nb d'actions gagnée : 
+Description :
+Ajout d'une fonctionnalité permettant aux lecteurs d'écran (comme le Narrateur de Windows) de lire automatiquement les questions. Cette amélioration, qui n'était pas présente auparavant, a été mise en place grâce à :
+
+L'intégration de aria-live="polite" sur l'élément contenant les questions, afin de notifier les lecteurs d'écran des mises à jour.
+Une réinitialisation et une réinsertion du texte des questions via innerText avec un léger délai, permettant de forcer la détection du changement.
+La temporisation de l'affichage des réponses à l'aide de aria-hidden="true", garantissant que les questions sont lues avant les réponses.
+Nombre d'actions gagnées :
+1 action par question, soit une économie totale de 10 actions pour un quiz de 10 questions.
 
 # Q19:  Proposition 3
 Description:
+Description: Mettre les liens en fin de page, et peut etre meme ignorer les question pour le narrateur
 Nb d'actions gagnée : 
