@@ -2,12 +2,12 @@ import { initQuizz } from './quizz.js';
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
-        <div class="header" style="cursor:pointer;">
+        <header class="header" style="cursor:pointer;">
           <h1>My Quizz</h1>
           <p>Pour accéder à la page <a href="about/" aria-label="Aller à la page À propos" style="text-decoration: none;">À propos</a>, cliquez ici.</p>
-        </div>
+        </header>
 
-        <div class="topnav" role="navigation" aria-label="Liens vers les réseaux sociaux">
+        <nav class="topnav" role="navigation" aria-label="Liens vers les réseaux sociaux">
           <a href="#" class="fa fa-facebook" aria-label="Lien Facebook"></a>
           <a href="#" class="fa fa-twitter" aria-label="Lien Twitter"></a>
           <a href="#" class="fa fa-google" aria-label="Lien Google"></a>
@@ -28,11 +28,11 @@ document.querySelector('#app').innerHTML = `
           <a href="#" class="fa fa-yahoo" aria-label="Lien Yahoo"></a>
           <a href="#" class="fa fa-reddit" aria-label="Lien Reddit"></a>
           <a href="#" class="fa fa-rss" aria-label="Lien RSS"></a>
-        </div>
+        </nav>
 
-        <div class="row">
-          <div class="leftcolumn">
-            <div class="card">
+        <main class="row">
+          <section class="leftcolumn">
+            <article class="card">
               <h1>Nom étudiant</h1>
               <h5>Description</h5>
               <div id="quiz" role="region" aria-labelledby="quiz-heading">
@@ -40,18 +40,19 @@ document.querySelector('#app').innerHTML = `
                 <div id="question"></div>
                 <div id="proposals"></div>
               </div>
-            </div>
-          </div>
-          <div class="rightcolumn">
-            <div class="card">
+            </article>
+          </section>
+          
+          <aside class="rightcolumn">
+            <article class="card">
               <img src="/question.png" alt="Image décorative représentant une question" width="500" height="600">
-            </div>
-          </div>
-        </div>
+            </article>
+          </aside>
+        </main>
 
-        <div class="footer">
+        <footer class="footer">
           <h2>@2024</h2>
-        </div>
+        </footer>
 `;
 
 initQuizz();

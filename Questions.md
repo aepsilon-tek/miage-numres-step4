@@ -35,15 +35,23 @@ aria-expanded : Indique l’état (développé/replié) d’un élément.
 # Q6: Ajouter le screen de votre score Lighthouse
 Screen:
 ![Image accessibilitéMieux](./Acessibilitymieux.png)
+
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
+Raisons :
+HTML natif est accessible : Les éléments comme <button> sont déjà interprétés correctement par les technologies d'assistance.
+Risque d'erreurs : L'usage incorrect de l'ARIA peut créer des conflits ou casser l'accessibilité.
+Maintenance accrue : ARIA nécessite plus de code et augmente les risques d’erreurs.
 
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
-
+![Image accessibilitéMieux](./Acessibilitymieux.png)
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
 Réponse:
 
+ Les modifications apportées concernent surtout la structure HTML et l'accessibilité, mais elles n'ont pas nécessairement amélioré les performances du site (temps de chargement, taille des ressources, etc.)
+
+ 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
 
