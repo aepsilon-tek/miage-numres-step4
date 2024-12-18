@@ -96,6 +96,7 @@ Non, en appliquant les altérations de vision (vision floue, contraste réduit, 
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-5.png)
 
 # Q17:  Proposition 1
 Description:
