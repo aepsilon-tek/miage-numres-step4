@@ -56,17 +56,22 @@ De base M. Mehdi pensait que le score n'allait pas augmenté... Pourtant il augm
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
+La valeur du rapport de constraste actuel est de : 2.38
 
 # Q11: Quel est la valeur du score AA :
 Réponse:
-La valeur du score AA est : 
+La valeur du score AA est de : 3.0
 
 # Q12: Quel est la valeur du score AAA :
 Réponse:
-La valeur du score AAA est : 
+La valeur du score AAA est de : 4.5
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
 Réponse:
+- Choisir des couleurs de texte et de fond avec un contraste plus élevé
+- Utiliser des outils de vérification de contraste
+- Tester différents schémas de couleurs
+- Augmenter la taille et l'épaisseur du texte
 
 # Q14: Ajouter le screen de votre score Lighthouse
 Screen:
