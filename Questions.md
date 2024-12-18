@@ -84,15 +84,24 @@ Oui, je peux évaluer visuellement ce qui est un lien et ce qui ne l'est pas apr
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
+![Capture d'écran](assets/score_eco_6.png)
 
 # Q17:  Proposition 1
-Description:
-Nb d'actions gagnée : 
+Description: Utilisation de aria-live pour les Feedbacks Automatiques pour annoncer automatiquement les changements sur la page comme les résultats du quiz ou les modifications de questions sans action
+
+Nb d'actions gagnée : 0 car concentration non sur le nb d'actions.
 
 # Q18:  Proposition 2
-Description:
-Nb d'actions gagnée : 
+Description: Mettre le quizz au départ le page afin de directement y accéder. On aurait donc 2 cliques pour y arriver (le 1er est pour accéder à la page à propos).
+
+Nb d'actions gagnée : On passe de 22 à 2 cliques
 
 # Q19:  Proposition 3
-Description:
+Description: Mettre un lien caché au tout début avec écrit *accéder aux quizz* comme ceci en 1 clique on arrive au quizz
+
+Nb d'actions gagnée : 22 à 1
+
+# Q19:  Proposition 4
+Description: Rendre tous le site avec une voix oral mais qui explique bien chaque clique donc pas juste clique ici, on veut aussi entendre les questions, les réponses donc réponses 1, 2... Puis la réponse qui a été choisi
+
 Nb d'actions gagnée : 

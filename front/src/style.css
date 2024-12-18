@@ -11,6 +11,15 @@ body {
   color: black;
 }
 
+a {
+  color: #0000EE;
+  text-decoration: underline !important;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 .header {
   padding: 30px;
   text-align: center;
@@ -33,12 +42,12 @@ body {
   color: #ffffff;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
 }
 
 .topnav a:hover {
   background: #606060; 
   color: white;
+  text-decoration: underline;
 }
 
 .leftcolumn {
@@ -108,7 +117,14 @@ button:hover {
   background-color: #333333;
 }
 
-
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  margin: 5px 2px;
+  text-decoration: none;
+}
 
 .fa:hover {
     opacity: 0.7;
@@ -117,4 +133,20 @@ button:hover {
 .fa-facebook, .fa-twitter, .fa-google, .fa-linkedin, .fa-youtube, .fa-instagram, .fa-pinterest, .fa-snapchat-ghost, .fa-skype, .fa-android, .fa-dribbble, .fa-vimeo, .fa-tumblr, .fa-vine, .fa-foursquare, .fa-stumbleupon, .fa-flickr, .fa-yahoo, .fa-soundcloud, .fa-reddit, .fa-rss {
   background: #cccccc;
   color: black; 
+}
+
+.skip-to-quiz {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  z-index: 1000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.skip-to-quiz:focus {
+  top: 10px;
 }
