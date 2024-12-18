@@ -67,7 +67,7 @@ Réponse: Quasiement, mais il manque quelques trucs pour que ce soit très clair
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
 
-
+![toujours score de 98 en accessbilité](image-5.png)
 
 # Q17:  Proposition 1
 Description:
