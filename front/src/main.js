@@ -8,7 +8,7 @@ document.querySelector('#app').innerHTML = `
         </header>
 
         <nav class="topnav" role="navigation" aria-label="Social media links">
-          <a href="#" class="fa fa-facebook" aria-label="Facebook"></a>
+            <a href="#" class="fa fa-facebook" aria-label="Facebook"></a>
           <a href="#" class="fa fa-twitter" aria-label="Twitter"></a>
           <a href="#" class="fa fa-google" aria-label="Google"></a>
           <a href="#" class="fa fa-linkedin" aria-label="LinkedIn"></a>
@@ -33,11 +33,11 @@ document.querySelector('#app').innerHTML = `
         <main class="row" role="main">
           <section class="leftcolumn">
             <article class="card">
-              <h1>Nom étudiant</h1>
-              <h5>description</h5>
-              <section id="quiz" role="form" aria-label="Quiz section">
-                <h2>A TOI DE JOUER</h2>
-                <div id="question" role="heading" aria-level="3"></div>
+              <h2>Nom étudiant</h2>
+              <p class="description">description</p>
+              <section id="quiz" aria-label="Quiz section">
+                <h3>A TOI DE JOUER</h3>
+                <div id="question" role="heading" aria-level="4"></div>
                 <div id="proposals" role="group" aria-label="Quiz answers"></div>
               </section>
             </article>
@@ -50,7 +50,7 @@ document.querySelector('#app').innerHTML = `
         </main>
 
         <footer class="footer" role="contentinfo">
-          <h2>@2024</h2>
+          <p>@2024</p>
         </footer>
 `
 
