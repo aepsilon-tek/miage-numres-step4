@@ -8,9 +8,9 @@ document.querySelector('#app').innerHTML = `
         </header>
 
         <nav class="topnav" role="navigation" aria-label="Social media links">
-            <a href="#" class="fa fa-facebook" aria-label="Facebook"></a>
-          <a href="#" class="fa fa-twitter" aria-label="Twitter"></a>
-          <a href="#" class="fa fa-google" aria-label="Google"></a>
+          <a href="https://facebook.com" class="fa fa-facebook"  aria-label="Facebook"></a>
+          <a href="https://twitter.com" class="fa fa-twitter" aria-label="Twitter"></a>
+          <a href="" class="fa fa-google" aria-label="Google"></a>
           <a href="#" class="fa fa-linkedin" aria-label="LinkedIn"></a>
           <a href="#" class="fa fa-youtube" aria-label="YouTube"></a>
           <a href="#" class="fa fa-instagram" aria-label="Instagram"></a>

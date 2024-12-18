@@ -61,7 +61,7 @@ Screen:
 Réponse: oui je suis capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations.
 
 # Q16: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen:![alt text](image.png)
 
 # Q17:  Proposition 1
 Description:
