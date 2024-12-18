@@ -9,26 +9,26 @@ document.querySelector('#app').innerHTML = `
 
 
         <div class="topnav">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-youtube"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-pinterest"></a>
-          <a href="#" class="fa fa-snapchat-ghost"></a>
-          <a href="#" class="fa fa-skype"></a>
-          <a href="#" class="fa fa-android"></a>
-          <a href="#" class="fa fa-dribbble"></a>
-          <a href="#" class="fa fa-vimeo"></a>
-          <a href="#" class="fa fa-tumblr"></a>
-          <a href="#" class="fa fa-vine"></a>
-          <a href="#" class="fa fa-foursquare"></a>
-          <a href="#" class="fa fa-stumbleupon"></a>
-          <a href="#" class="fa fa-flickr"></a>
-          <a href="#" class="fa fa-yahoo"></a>
-          <a href="#" class="fa fa-reddit"></a>
-          <a href="#" class="fa fa-rss"></a>
+          <a href="#" aria-label="Lien vers Facebook" class="fa fa-facebook"></a>
+          <a href="#" aria-label="Lien vers Twitter" class="fa fa-twitter"></a>
+          <a href="#" aria-label="Lien vers Google" class="fa fa-google"></a>
+          <a href="#" aria-label="Lien vers LinkedIn" class="fa fa-linkedin"></a>
+          <a href="#" aria-label="Lien vers YouTube" class="fa fa-youtube"></a>
+          <a href="#" aria-label="Lien vers Instagram" class="fa fa-instagram"></a>
+          <a href="#" aria-label="Lien vers Pinterest" class="fa fa-pinterest"></a>
+          <a href="#" aria-label="Lien vers Snapchat" class="fa fa-snapchat-ghost"></a>
+          <a href="#" aria-label="Lien vers Skype" class="fa fa-skype"></a>
+          <a href="#" aria-label="Lien vers Android" class="fa fa-android"></a>
+          <a href="#" aria-label="Lien vers Dribbble" class="fa fa-dribbble"></a>
+          <a href="#" aria-label="Lien vers Vimeo" class="fa fa-vimeo"></a>
+          <a href="#" aria-label="Lien vers Tumblr" class="fa fa-tumblr"></a>
+          <a href="#" aria-label="Lien vers Vine" class="fa fa-vine"></a>
+          <a href="#" aria-label="Lien vers Foursquare" class="fa fa-foursquare"></a>
+          <a href="#" aria-label="Lien vers StumbleUpon" class="fa fa-stumbleupon"></a>
+          <a href="#" aria-label="Lien vers Flickr" class="fa fa-flickr"></a>
+          <a href="#" aria-label="Lien vers Yahoo" class="fa fa-yahoo"></a>
+          <a href="#" aria-label="Lien vers Reddit" class="fa fa-reddit"></a>
+          <a href="#" aria-label="Lien RSS" class="fa fa-rss"></a>
         </div>
 
         <div class="row">
@@ -45,7 +45,7 @@ document.querySelector('#app').innerHTML = `
           </div>
           <div class="rightcolumn">
             <div class="card">
-              <img src="/question.png" width="500" height="600">
+              <img src="/question.png" width="500" height="600" alt="image descriptif">
             </div>
         </div>
 
