@@ -3,7 +3,7 @@ import './style.css';
 
 document.querySelector('#app').innerHTML = `
     <header>
-        <!-- Lien caché pour accéder directement au quiz -->
+        <!-- Lien pour accéder directement au quiz -->
         <a href="#quiz" class="skip-to-quiz">Accéder au quizz</a>
         <h1>My Quizz</h1>
         <p>Pour accéder à la page à propos, <a href="about/" style="text-decoration: none;">cliquez ici</a>.</p>
@@ -56,6 +56,18 @@ document.querySelector('#app').innerHTML = `
     <footer>
         <h2>@2024</h2>
     </footer>
-`
+`;
 
-initQuizz();
+const skipToQuizLink = document.querySelector('.skip-to-quiz');
+
+skipToQuizLink.addEventListener('click', (e) => {
+    e.preventDefault(); 
+    initQuizz();
+    narrateText('Le quiz commence. Préparez-vous pour la première question.'); // Annonce vocale de démarrage
+});
+
+function narrateText(text) {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'fr-FR';
+    speechSynthesis.speak(utterance);
+}
