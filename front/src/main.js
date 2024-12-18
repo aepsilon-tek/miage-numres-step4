@@ -2,13 +2,13 @@ import { initQuizz } from './quizz.js';
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
-        <div class="header" style="cursor:pointer;" role="banner">
+        <header class="header" style="cursor:pointer;" role="banner">
           <h1>My Quizz</h1>
           Pour accéder a la page /about <a href="about/" style="text-decoration: none;">click ici</a>
-        </div>
+        </header>
 
 
-        <div class="topnav">
+        <nav class="topnav">
           <a href="#" aria-label="Facebook" class="fa fa-facebook"></a>
           <a href="#" aria-label="Twitter" class="fa fa-twitter"></a>
           <a href="#" aria-label="Google" class="fa fa-google"></a>
@@ -29,9 +29,9 @@ document.querySelector('#app').innerHTML = `
           <a href="#" aria-label="Yahoo" class="fa fa-yahoo"></a>
           <a href="#" aria-label="Reddit" class="fa fa-reddit"></a>
           <a href="#" aria-label="RSS" class="fa fa-rss"></a>
-        </div>
+        </nav>
 
-        <div class="row">
+        <main class="row">
           <div class="leftcolumn">
             <div class="card">
               <h1>Nom étudiant</h1>
@@ -47,11 +47,11 @@ document.querySelector('#app').innerHTML = `
             <div class="card">
               <img src="/question.png" alt="txt" width="500" height="600">
             </div>
-        </div>
+        </main>
 
-        <div class="footer" role="contentinfo">
+        <footer class="footer" role="contentinfo">
           <h2>@2024</h2>
-        </div>
+        </footer>
 `
 
 initQuizz();
