@@ -62,21 +62,37 @@ Réponse:
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
-
+![alt text](image-3.png)
+J'avais changé la couleur.
 # Q11: Quel est la valeur du score AA :
 Réponse:
+Pour satisfaire le niveau AA, le rapport de contraste minimal doit être :
+- 4.5:1 pour le texte normal.
+- 3:1 pour le texte en gras ou de grande taille (≥ 18pt ou ≥ 14pt gras).
 
 # Q12: Quel est la valeur du score AAA :
 Réponse:
+Pour satisfaire le niveau AAA, le rapport de contraste minimal doit être :
+- 7:1 pour le texte normal.
+- 4.5:1 pour le texte en gras ou de grande taille.
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
 Réponse:
+Pour améliorer le contraste, il faut :
+
+- Augmenter la luminosité ou foncer le texte pour qu’il ressorte mieux sur l’arrière-plan (Exemple : passer le texte gris à blanc sur fond violet).
+- Modifier la couleur de fond pour qu’elle contraste davantage avec le texte.
+- Utiliser des outils de vérification comme Lighthouse ou Contrast Checker pour tester les nouvelles couleurs.
 
 # Q14: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-4.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:
+Non, en appliquant les altérations de vision (vision floue, contraste réduit, et déficiences des couleurs), il devient difficile de déterminer visuellement ce qui est un lien ou non, surtout si :
+- Les liens n'ont pas de soulignement ou autre distinction visuelle (comme une couleur différente ou un effet au survol).
+- Le contraste est insuffisant entre les liens et le texte normal.
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
