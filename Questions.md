@@ -26,22 +26,22 @@ Screen: ![alt text](image-2.png)
 Réponse:
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
-Réponse:
+Réponse: Contrast ratio 5.62
 
 # Q11: Quel est la valeur du score AA :
-Réponse:
+Réponse: 4.5
 
 # Q12: Quel est la valeur du score AAA :
-Réponse:
+Réponse: 7.0
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
-Réponse:
+Réponse: En changent la couleur du teste ou du background ou  en modifiant la taille du texte
 
 # Q14: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen:![alt text](image-3.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
-Réponse:
+Réponse: Non, on arrive pas à différencier les liens et le texte
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
