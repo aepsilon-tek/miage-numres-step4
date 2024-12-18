@@ -5,7 +5,7 @@ document.querySelector('#app').innerHTML = `
 
         <header class="header" style="cursor:pointer;">
           <h1>My Quizz</h1>
-          Pour accéder a la page /about <a href="about/" style="text-decoration: none;">click ici</a>
+          Pour accéder a la page /about <a href="about/" style="text-decoration: none;">about</a>
         </header>
 
         <section>
@@ -36,9 +36,9 @@ document.querySelector('#app').innerHTML = `
           <div class="leftcolumn">
             <div class="card">
               <h1>Nom étudiant</h1>
-              <h5>description</h5>
+              <h2>description</h2>
               <div id="quiz">
-                <h2>A TOI DE JOUER</h2>
+                <h3>A TOI DE JOUER</h3>
                 <div id="question"></div>
                 <div id="proposals"></div>
               </div>

@@ -78,15 +78,17 @@ Non, en appliquant les altérations de vision (vision floue, contraste réduit, 
 - Le contraste est insuffisant entre les liens et le texte normal
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-5.png)
 
 # Q17:  Proposition 1
 Description:
+changé la positionn des liens en bas pour accédé plus vite aux questions 
 Nb d'actions gagnée : 
 
 # Q18:  Proposition 2
-Description:
+Description: permettre au narrateur de lire les questions
 Nb d'actions gagnée : 
 
 # Q19:  Proposition 3
-Description:
+Description: utilisé la technologie Eye-tracking pour permettre au handicap sans mains de contrôlé la souris par leurs yeux.
 Nb d'actions gagnée : 
