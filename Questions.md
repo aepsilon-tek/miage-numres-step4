@@ -68,7 +68,7 @@ Réponse: En vrai oui , un peu plus compliqué pour le floue mais c'est ok
 Screen: Je l'avais déjà faire voir les photos précédente 
 
 # Q17:  Proposition 1
-Description:
+Description: Proposition : Ajouter une zone ARIA live et gérer le focus dynamique pour informer les lecteurs d’écran des changements dans le quiz lorsqu’une nouvelle question ou proposition apparaît.
 Nb d'actions gagnée : 
 
 # Q18:  Proposition 2

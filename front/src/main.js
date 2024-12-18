@@ -39,8 +39,11 @@ document.querySelector('#app').innerHTML = `
         <h5>Description</h5>
         <section id="quiz" role="region" aria-labelledby="quiz-heading">
           <h2 id="quiz-heading">À toi de jouer</h2>
-          <div id="question"></div>
-          <div id="proposals"></div>
+          <!-- ARIA live region ajoutée ici -->
+          <div id="aria-live-region" aria-live="polite" aria-atomic="true">
+            <div id="question"></div>
+            <div id="proposals"></div>
+          </div>
         </section>
       </article>
     </section>
