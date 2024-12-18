@@ -39,7 +39,7 @@ Screen:
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
-L'une des meilleures pratiques de l'ARIA est "ne pas utiliser l'ARIA" car, lorsque les éléments HTML sémantiques natifs sont correctement utilisés (comme <button>, <nav>, <header>), ils intègrent déjà les rôles et propriétés nécessaires pour les technologies d'assistance. Ajouter des attributs ARIA inutiles peut entraîner des comportements imprévus ou des redondances, rendant le site moins accessible. ARIA doit être utilisé uniquement lorsqu'il n'existe pas d'équivalent natif en HTML.
+L'une des meilleures pratiques de l'ARIA est "ne pas utiliser l'ARIA" car, lorsque les éléments HTML sémantiques natifs sont correctement utilisés (comme `<button>`, `<nav>`, `<header>`), ils intègrent déjà les rôles et propriétés nécessaires pour les technologies d'assistance. Ajouter des attributs ARIA inutiles peut entraîner des comportements imprévus ou des redondances, rendant le site moins accessible. ARIA doit être utilisé uniquement lorsqu'il n'existe pas d'équivalent natif en HTML.
 
 
 # Q8: Ajouter le screen de votre score Lighthouse
@@ -57,21 +57,31 @@ Le score de Lighthouse n'a pas augmenté car les modifications apportées ne cou
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
+Contrast ration : 2.38
 
 # Q11: Quel est la valeur du score AA :
 Réponse:
+- Pour le texte normal, la valeur minimale pour AA est 4.5:1.
+- Pour un texte large (au moins 18px ou 14px en gras), le score AA est 3:1.
 
 # Q12: Quel est la valeur du score AAA :
 Réponse:
+- Pour le texte normal, la valeur minimale pour AAA est 7:1.
+- Pour un texte large, le score AAA est 4.5:1.
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
 Réponse:
+- Changer la couleur du texte (color) pour une teinte plus sombre ou plus claire selon le fond.
+- Modifier la couleur de l'arrière-plan (background-color) pour qu'elle contraste davantage avec le texte.
+- Augmenter l'épaisseur de la police (bold) pour améliorer la lisibilité si le contraste est limite.
 
 # Q14: Ajouter le screen de votre score Lighthouse
 Screen:
+![Image Q14](./Image3.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:
+OUI
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
