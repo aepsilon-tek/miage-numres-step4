@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;  
   background: purple;
-  color:grey;
+  color:#ffffff;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 }
 
 .topnav a {
-  color: #f2f2f2;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;

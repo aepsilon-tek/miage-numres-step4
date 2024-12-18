@@ -18,36 +18,71 @@ Réponse:
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
+3 Rôles ARIA :
+role="button" : Définit un élément comme un bouton interactif.
+role="dialog" : Désigne une boîte de dialogue ou une fenêtre modale.
+role="navigation" : Identifie une section de la page servant à la navigation.
+3 Propriétés ARIA :
+aria-label : Fournit une étiquette accessible à un élément (utile si l’élément n’a pas de texte visible).
+aria-hidden : Indique si un élément doit être ignoré par les technologies d’assistance.
+aria-expanded : Indique l’état de déploiement d’un élément (par exemple, pour un menu ou un accordéon).
 
 # Q6: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
+La meilleure pratique "ne pas utiliser l'ARIA" signifie qu'il faut privilégier les éléments HTML natifs (comme <button>, <nav>, <label>, etc.) avant d'ajouter des attributs ARIA. Cela s’explique par plusieurs raisons :
+
+HTML natif est accessible par défaut : Les éléments HTML standards intègrent déjà des fonctionnalités accessibles compatibles avec les technologies d’assistance.
+ARIA mal utilisée peut nuire : Une mauvaise utilisation d’ARIA peut créer des problèmes d’accessibilité (par exemple, des informations contradictoires pour les lecteurs d’écran).
+Simplicité et maintenance : Utiliser des éléments HTML natifs rend le code plus simple, plus compréhensible et plus facile à maintenir.
+L'ARIA doit être utilisée uniquement en complément lorsque le HTML seul ne permet pas d’assurer une accessibilité complète.
 
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-2.png)
 
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
 Réponse:
+Du coup si
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
 
+![alt text](image-3.png)
+
 # Q11: Quel est la valeur du score AA :
 Réponse:
-
+![alt text](image-4.png)
 # Q12: Quel est la valeur du score AAA :
 Réponse:
+![alt text](image-5.png)
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
 Réponse:
 
+Pour changer la valeur du contraste du texte, vous pouvez :
+
+Modifier la couleur du texte (color) :
+
+Utiliser une couleur plus foncée ou plus claire en fonction de la couleur de fond.
+Modifier la couleur d’arrière-plan (background-color) :
+
+Adopter une couleur qui crée un contraste suffisant avec le texte.
+Utiliser des outils de vérification de contraste :
+
+Outils comme WebAIM Contrast Checker ou Lighthouse pour s’assurer que le ratio de contraste respecte les normes d’accessibilité (WCAG AA ou AAA).
+
 # Q14: Ajouter le screen de votre score Lighthouse
 Screen:
 
+![alt text](image-6.png)
+
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:
+Non, pas toujours
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
