@@ -46,20 +46,23 @@ Screen: Screen: ![Capture d'écran Q8](./photoQ8.png)
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
 
+Rapport de contraste 13,65
+
 # Q11: Quel est la valeur du score AA :
-Réponse:
+Réponse: AA: 3.0
 
 # Q12: Quel est la valeur du score AAA :
-Réponse:
+Réponse: AAA: 4.5
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
-Réponse:
+Réponse: En mettant des couleurs très claire pour le fond et très foncé pour le texte ou vice et versa
 
 # Q14: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: J'avais déjà changé le contraste donc le score Lighthouse ne change pas:
+Screen: Screen: ![Capture d'écran Q8](./photoQ14.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
-Réponse:
+Réponse: En vrai oui , un peu plus compliqué pour le floue mais c'est ok
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
