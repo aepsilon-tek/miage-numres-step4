@@ -48,25 +48,25 @@ Screen:  Screen:![Capture d'écran](assets/image2.png)
 Réponse: le score a changé vu que ça change l 'hircherarchie de mon code HTML ( ça permet au reader d'identifier quoi lire en premier )
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
-Réponse:
+Réponse:   Screen:![Capture d'écran](assets/image3.png)
 
-# Q11: Quel est la valeur du score AA :
-Réponse:
 
-# Q12: Quel est la valeur du score AAA :
-Réponse:
+# Q11 et 12: Quel est la valeur du score AA :
+Réponse:  Screen:![Capture d'écran](assets/image4.png)
+
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
-Réponse:
+Réponse:Je change la couleur du texte (color) et du fond (background-color) dans le CSS.
 
 # Q14: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: Screen:![Capture d'écran](assets/image5.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
-Réponse:
+Réponse:Non, il est difficile de déterminer ce qui est un lien avec certaines altérations visuelles comme le flou ou troubles ....
+
 
 # Q16: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: Screen:![Capture d'écran](assets/image6.png)
 
 # Q17:  Proposition 1
 Description:
