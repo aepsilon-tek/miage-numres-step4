@@ -30,15 +30,24 @@ export async function initQuizz(questions) {
   
 async function showQuestion() {
   const question = quizzData[currentQuestion];
-  questionElement.innerText = question.label
+
+  questionElement.setAttribute('aria-live', 'assertive');
+  questionElement.innerText = question.label;
+
+  const msg = new SpeechSynthesisUtterance(question.label);
+  speechSynthesis.speak(msg);
   
   proposalsElement.innerHTML = "";
-  question.proposals.forEach(proposal => {
+  question.proposals.forEach((proposal, index) => {
     const button = document.createElement("button");
     button.innerText = proposal.label;
+    button.setAttribute('tabindex', '0'); 
+    if (index === 0) button.setAttribute('id', 'first-answer'); 
+
     proposalsElement.appendChild(button);
     button.addEventListener("click", selectAnswer);
   });
+  document.getElementById('first-answer').focus();
 }
   
 async function selectAnswer(e) {
