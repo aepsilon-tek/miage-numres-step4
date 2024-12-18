@@ -47,13 +47,17 @@ Réponse: Non, on arrive pas à différencier les liens et le texte
 Screen: ![alt text](image-4.png)
 
 # Q17:  Proposition 1
-Description:
+Description: Pouvoir écouter la question lorsque l'on est mal voyant ou aveugle
 Nb d'actions gagnée : 
 
 # Q18:  Proposition 2
-Description:
+Description: Mettre les réseaux sociaux en footer pour éviter de les passer un par un et permet d'acceder aux questions en peu de click
 Nb d'actions gagnée : 
 
 # Q19:  Proposition 3
-Description:
+Description: Agrandir le texte des questions et réponses du Quizz
+Nb d'actions gagnée : 
+
+# Q19:  Proposition 3
+Description: Modifier la couleur et faire de bon contraste de couleurs
 Nb d'actions gagnée : 

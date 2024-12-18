@@ -36,7 +36,7 @@ document.querySelector('#app').innerHTML = `
               <h2>Nom étudiant</h2>
               <h3>Description</h3>
               <div id="quiz">
-                <h2>A TOI DE JOUER</h2>
+                <h4>A TOI DE JOUER</h4>
                 <div id="question"></div>
                 <div id="proposals"></div>
               </div>
