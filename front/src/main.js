@@ -2,56 +2,74 @@ import { initQuizz } from './quizz.js';
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
-        <div class="header" style="cursor:pointer;">
-          <h1>My Quizz</h1>
-          Pour accéder a la page /about <a href="about/" style="text-decoration: none;">click ici</a>
-        </div>
+  <header class="header" style="cursor:pointer;" aria-label="En-tête du quizz">
+    <h1>My Quizz</h1>
+    <p>
+      Pour accéder à la page 
+      <a href="about/" style="text-decoration: underline;" aria-label="Accéder à la page À propos de My Quizz">Page À propos</a>
+    </p>
+  </header>
 
+  <nav class="topnav" aria-label="Liens vers les réseaux sociaux">
+    <a href="#" class="fa fa-facebook" aria-label="Accéder à notre page Facebook"></a>
+    <a href="#" class="fa fa-twitter" aria-label="Accéder à notre page Twitter"></a>
+    <a href="#" class="fa fa-google" aria-label="Accéder à notre page Google"></a>
+    <a href="#" class="fa fa-linkedin" aria-label="Accéder à notre page LinkedIn"></a>
+    <a href="#" class="fa fa-youtube" aria-label="Accéder à notre chaîne YouTube"></a>
+    <a href="#" class="fa fa-instagram" aria-label="Accéder à notre page Instagram"></a>
+  </nav>
 
-        <div class="topnav">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-youtube"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-pinterest"></a>
-          <a href="#" class="fa fa-snapchat-ghost"></a>
-          <a href="#" class="fa fa-skype"></a>
-          <a href="#" class="fa fa-android"></a>
-          <a href="#" class="fa fa-dribbble"></a>
-          <a href="#" class="fa fa-vimeo"></a>
-          <a href="#" class="fa fa-tumblr"></a>
-          <a href="#" class="fa fa-vine"></a>
-          <a href="#" class="fa fa-foursquare"></a>
-          <a href="#" class="fa fa-stumbleupon"></a>
-          <a href="#" class="fa fa-flickr"></a>
-          <a href="#" class="fa fa-yahoo"></a>
-          <a href="#" class="fa fa-reddit"></a>
-          <a href="#" class="fa fa-rss"></a>
-        </div>
+  <main class="row">
+    <section class="leftcolumn">
+      <article class="card" aria-label="Carte d'information de l'étudiant">
+        <h2>Nom étudiant</h2>
+        <p>Description</p>
+        <section id="quiz" role="region" aria-labelledby="quiz-title">
+          <h3 id="quiz-title">À TOI DE JOUER</h3>
+          <div id="question" aria-live="polite" tabindex="0"></div>
+          <div id="proposals" aria-live="polite" tabindex="0"></div>
+        </section>
+        <button id="submit-btn" aria-label="Soumettre votre réponse" class="accessible-btn">
+          Soumettre
+        </button>
+      </article>
+    </section>
+    <aside class="rightcolumn">
+      <section class="card">
+        <img src="/question.png" width="500" height="600" alt="Point d'interrogation, illustration d'un quizz">
+      </section>
+    </aside>
+  </main>
 
-        <div class="row">
-          <div class="leftcolumn">
-            <div class="card">
-              <h1>Nom étudiant</h1>
-              <h5>description</h5>
-              <div id="quiz">
-                <h2>A TOI DE JOUER</h2>
-                <div id="question"></div>
-                <div id="proposals"></div>
-              </div>
-            </div>
-          </div>
-          <div class="rightcolumn">
-            <div class="card">
-              <img src="/question.png" width="500" height="600">
-            </div>
-        </div>
+  <footer class="footer" role="contentinfo">
+    <p>@2024</p>
+  </footer>
+`;
 
-        <div class="footer">
-          <h2>@2024</h2>
-        </div>
-`
+document.querySelectorAll('a, button, input, select, textarea').forEach((el) => {
+  el.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      el.click();
+    }
+  });
+});
+
+// Focus visible pour les utilisateurs naviguant au clavier
+const style = document.createElement('style');
+style.textContent = `
+  a, button {
+    outline: none;
+    transition: outline 0.3s ease;
+  }
+  a:focus, button:focus {
+    outline: 3px solid #007BFF;
+  }
+  a {
+    text-decoration: underline;
+    color: #007BFF;
+  }
+`;
+document.head.appendChild(style);
 
 initQuizz();
