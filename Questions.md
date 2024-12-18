@@ -66,7 +66,7 @@ Réponse:Non, il est difficile de déterminer ce qui est un lien avec certaines 
 
 
 # Q16: Ajouter le screen de votre score Lighthouse
-Screen: Screen:![Capture d'écran](assets/image6.png)
+Screen: Screen:![Capture d'écran](assets/image 6.png)
 
 # Q17:  Proposition 1
 Description:
