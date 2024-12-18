@@ -30,16 +30,22 @@ aria-hidden : Indique si un élément doit être ignoré par les technologies d�
 aria-live : Informe que le contenu d’un élément doit être mis à jour dynamiquement et annoncé par les lecteurs d’écran 
 
 # Q6: Ajouter le screen de votre score Lighthouse
-Screen:Screen:![Capture d'écran](assets/image1.png)
+Screen: Screen:![Capture d'écran](assets/image1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
+reponse : L’ARIA doit être utilisée seulement si les éléments HTML sémantiques ne suffisent pas.
 
+Pour moi, cela s'explique car :
+
+HTML sémantique est naturellement accessible : Les balises comme <header>, <section>, <button> et <h1> possèdent déjà des rôles ARIA par défaut.
+et Un mauvais usage de l’ARIA peut nuire à l’accessibilité.
 
 # Q8: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen:  Screen:![Capture d'écran](assets/image2.png)
+
 
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
-Réponse:
+Réponse: le score a changé vu que ça change l 'hircherarchie de mon code HTML ( ça permet au reader d'identifier quoi lire en premier )
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
