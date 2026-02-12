@@ -5,7 +5,7 @@ Vous avez 4 séances de TD/TP pour  produire un site web qui permettent de répo
 
 
 ## Environnement
-L'ensemble des  4 TD/TP sont à réaliser sur **_Gitpod_**.
+L'ensemble des  4 TD/TP sont à réaliser sur **_Github codespaces_**.
 Vous devez réutiliser le compte que vous avez crée durant la première séance.
 
 ## Déroulement
@@ -17,10 +17,8 @@ Comme au premier TP, vous devez suivre le même processus que pour contribuer à
 1. Proposer vos modifications sur le repo. parent (**PullRequest**)
 
 ## Architecture
-L'architecture générale de  l'application  Burger Quizz est la suivante :
+L'architecture   générale de  l'application  Burger Quizz est la suivante :
 ![Capture d'écran](assets/Archi.png)
-
-Une application web consomme une API Rest Quarkus  qui s'appuie sur une base de données relationnelles en  mémoire **H2**.
 
 ## TP4 - Accessibilité
 
@@ -41,13 +39,25 @@ L'objectif est de créer une copie du projet 'miage-numres-step4' sur votre comp
 1. Fork du projet grâce au bouton **Fork**
 ![Capture d'écran](assets/Fork.png)
 
-# Lancement de GitPod
 
-Pour utiliser  **GitPod** avec votre projet forké, il suffit d'ouvrir  l'url suivant dans votre navigateur :
-**https://gitpod.io/#** + **URL_REPO_GITHUB**
+# lancement de CodeSpaces
 
-Avec un repo _https://github.com/miage3-ae/miage-numres-step4_ alors l'url est : **https://gitpod.io/#https://github.com/miage3-ae/miage-numres-step4**
+1. Rendez-vous sur la page principale de votre projet forké
+1. En haut de cette page, cliquez sur le bouton vert <> Code
+1. Sélectionnez l'onglet Codespaces
+1. Cliquez sur Create codespace on main
+1. Attendez environ 1 à 2 minutes que l'environnement se construise (le système installe Java et les extensions nécessaires automatiquement).
 
+Sinon vous pouvez clicquer ici  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=${github.repository_id})
+
+> [!TIP]
+> Fermez la fenêtre de Copilot, vous n'en avez pas besoin.
+
+> [!WARNING]
+> Assurez-vous d'avoir forké ce projet sur votre compte personnel avant de cliquer sur le bouton ci-dessus, sinon vous ne pourrez pas enregistrer (pusher) vos modifications.
+
+> [!WARNING]
+> Vous disposez de 60 heures gratuites par mois. Quand vous avez terminé votre travail, cliquez sur le nom du Codespace en bas à gauche et choisissez Stop Current Codespace.
 
 # ViteJs
  Vite est un outil de construction qui vise à fournir une expérience de développement plus rapide et plus simple pour les projets Web modernes. Il se compose de deux grandes parties :
@@ -59,7 +69,6 @@ Avec un repo _https://github.com/miage3-ae/miage-numres-step4_ alors l'url est :
    optimisées pour la production.
    
 Nous utiliserons Vite durant ce TP pour facilité l'expérience de Devellopement en utilisant notamment le HMR.
-
 
 # Connecter l'api et le front
 
