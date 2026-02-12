@@ -1,0 +1,48 @@
+{
+  "name": "Environnement MIAGE (Java + Node + Vite)",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22",
+      "nvmVersion": "latest"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.vscode-quarkus",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        // --- SECTION ANTI-COPILOT ---
+        
+        // 1. Désactive l'autocomplétion (le texte gris)
+        "github.copilot.enable": {
+            "*": false,
+            "plaintext": false,
+            "markdown": false,
+            "scminput": false
+        },
+        "github.copilot.editor.enableAutoCompletions": false,
+        "editor.inlineSuggest.enabled": false,
+
+        // 2. Désactive le Chat Inline (Ctrl+I) et le Chat Editor
+        "inlineChat.enabled": false,
+        "interactiveEditor.enabled": false,
+        
+        // 3. Masque les menus flottants "Ask Copilot"
+        "github.copilot.advanced.showCodeLenses": false,
+        "editor.codeLens": false 
+      }
+    }
+  },
+
+  "forwardPorts": [8080, 5173],
+
+
+  "postAttachCommand": "./.devcontainer/check_fork.sh"
+}
