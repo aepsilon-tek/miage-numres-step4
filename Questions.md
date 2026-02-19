@@ -1,50 +1,65 @@
 # Q1: Quels sont les arguments que vous pouvez utiliser pour convaincre votre Client de rendre son quizz accessible ? (Vous pouvez vous aider du cour)
-Réponse:
+Réponse: L'accessibilité d'un site offre une meilleure SEO, et différentes lois demandent une meilleure accessibilité des sites WEB / applications pour ne pas faire de discrimination envers les personnes ayant des handicaps
 
 # Q2: Ajouter le screen de votre score :
 Screen:
+![alt text](image.png)
 
 # Q3: Est-ce que l'analyse de Lighthouse est suffisante pour évaluer l'Accessibilité de votre Application ?
 Réponse:
+Clairement pas, pour évaluer clairement l'accessibilité d'un site, il faut passer directement par les clients en situation de handicap, comprendre leurs besoins et leurs nécessités
 
 # Q4: Combien de fois vous devez utiliser une touche du clavier pour passer le quizz ?
-Réponse:
+Réponse: 27 fois
 
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
+role="region": Définit la zone de question du quiz comme une région importante
+role="group": Regroupe les propositions de réponses ensemble
+role="navigation": (implicite avec `<nav>`) Identifie la barre de navigation des réseaux sociaux
+
+aria-label: Fournit un libellé accessible pour les éléments (ex: "Réseaux sociaux", "Propositions de réponses", "Facebook")
+aria-live="polite: Annonce les mises à jour dynamiques du contenu sans interrompre l'utilisateur
+aria-labelledby: Lie un élément à son libellé 
+
 
 # Q6: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
-Réponse:
+Réponse: Car Les sémantiques de base utilise déjà l'ARIA, l'utilisation des nav, footer, header, sont assez explicite pour le navigateur
 
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-2.png)
 
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
-Réponse:
+Réponse:Car les sémantique ne sont pas considérer comme de l'accesibilité d'après l'analyse LightHouse
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
-Réponse:
+Réponse: Actuellement il est de 2.38
 
 # Q11: Quel est la valeur du score AA :
-Réponse:
+Réponse: 4.5:1
 
 # Q12: Quel est la valeur du score AAA :
-Réponse:
+Réponse: 7:1
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
-Réponse:
+Réponse: Ajouter plus de contraste, mettre des couleurs plus foncées
 
 # Q14: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-3.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:
+En faite non, les liens ne sont pas visibles, tandis que les boutons interactifs oui 
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-4.png)
 
 # Q17:  Proposition 1
 Description:
