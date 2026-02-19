@@ -101,19 +101,19 @@ Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe
 5. Répondre à la question Q3 du fichier **_Questions.md_**
 4. Passer le Quizz sans utiliser la souris.
 5. Répondre à la question Q4 du fichier **_Questions.md_**
-8. Commiter & Pusher le fichier **_Questions.md_**
+6. Commiter & Pusher le fichier **_Questions.md_**
 
 ### Arbre d'arboresence d'Accessibilité
 Les navigateurs convertissent le balisage en une représentation interne appelée arbre DOM. Le DOM contient un objet pour chaque balise, attribut et noeud de texte. Les navigateurs créent ensuite un arbre d'accessibilité basé sur l'arbre DOM, celui-ci est utilisé par les technologies d'assistance telles que les lecteurs d'écran via des APIs spécifiques à une plateforme.
 
 Sous Chrome : 
 1. Ouvrir la console développer (click droit sur un texte à tester -> inspecter)
-4. Dans le side menu qui apparait à droite, sous l'onglet Styles, clicker sur la Accessibilité, coché sur "Activer l’arborescence d’accessibilité de la page entière"
-1. Recharger la console développer
-4. Dans le side menu qui apparait à gauche un icone d'accessibilité devrait appaitre, si vous clickez dessus vous pourrait voir l'arbre d'Accessibilité
+2. Dans le side menu qui apparait à droite, sous l'onglet Styles, clicker sur la case Accessibilité, cocher sur "Activer l’arborescence d’accessibilité de la page entière"
+3. Recharger la console développer
+4. Dans le side menu qui apparait à gauche une icone d'accessibilité devrait appaitre, si vous clickez dessus vous pourrait voir l'arbre d'Accessibilité
 
 ### ARIA
-Accessible Rich Internet Applications (ARIA) (qu'on pourrait traduire par « applications internet riches et accessibles ») est un ensemble de rôles et d'attributs d'attributs qui définissent comment rendre le contenu et les applications web accessibles (notamment ceux développés avec JavaScript) pour les personnes avec des handicaps.
+Accessible Rich Internet Applications (ARIA) (qu'on pourrait traduire par « applications internet riches et accessibles ») est un ensemble de rôles et d'attributs qui définissent comment rendre le contenu et les applications web accessibles (notamment ceux développés avec JavaScript) pour les personnes avec des handicaps.
 
 ARIA complète HTML afin que les éléments interactifs et les widgets puissent être utilisés par les outils d'assistance quand les fonctionnalités standard ne le permettent pas. Ainsi, ARIA permet de rendre accessible les widgets JavaScript, les indications dans les formulaires, les messages d'erreur et les mises à jour dynamiques du contenu, etc.
 

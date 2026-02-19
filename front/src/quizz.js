@@ -30,16 +30,26 @@ export async function initQuizz(questions) {
   
 async function showQuestion() {
   const question = quizzData[currentQuestion];
-  questionElement.innerText = question.label
-  
+
+  questionElement.innerText = question.label;
+
+  questionElement.setAttribute("tabindex", "-1"); 
+  questionElement.focus({ focusVisible: true });
+
   proposalsElement.innerHTML = "";
-  question.proposals.forEach(proposal => {
+  question.proposals.forEach((proposal, index) => {
     const button = document.createElement("button");
     button.innerText = proposal.label;
     proposalsElement.appendChild(button);
+
+    if(index === 0) {
+      button.focus({ focusVisible: true });
+    }
+
     button.addEventListener("click", selectAnswer);
   });
 }
+
   
 async function selectAnswer(e) {
   const selectedButton = e.target;
