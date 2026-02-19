@@ -39,6 +39,12 @@ async function showQuestion() {
     proposalsElement.appendChild(button);
     button.addEventListener("click", selectAnswer);
   });
+
+  const button = document.createElement("button");
+// ... config du bouton
+if (index === 0) button.id = "first-proposal"; 
+// Après la boucle :
+document.getElementById("first-proposal").focus();
 }
   
 async function selectAnswer(e) {
@@ -67,6 +73,6 @@ async function showResult() {
 
   quiz.innerHTML = `
     <h1>Quizz Finis!</h1>
-    <p>Ton score: ${score}/${quizzData.length}</p>
+    <p aria-live="assertive">Ton score: ${score}/${quizzData.length}</p>
   `;
 }

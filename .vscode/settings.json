@@ -1,10 +1,11 @@
 {
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "plaintext": false,
         "markdown": false,
+        "scminput": false,
         "java": false,
-        "javascript": false,
+        "javascript": true,
         "typescript": false
     },
     "github.copilot.editor.enableAutoCompletions": false,
