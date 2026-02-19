@@ -33,12 +33,19 @@ async function showQuestion() {
   questionElement.innerText = question.label
   
   proposalsElement.innerHTML = "";
-  question.proposals.forEach(proposal => {
+  question.proposals.forEach((proposal, index) => {
     const button = document.createElement("button");
     button.innerText = proposal.label;
+    button.id = `proposal-${index}`;
     proposalsElement.appendChild(button);
     button.addEventListener("click", selectAnswer);
   });
+  setTimeout(() => {
+    const firstButton = document.getElementById("proposal-0");
+    if (firstButton) {
+      firstButton.focus({ focusVisible: true });
+    }
+  }, 100);
 }
   
 async function selectAnswer(e) {
