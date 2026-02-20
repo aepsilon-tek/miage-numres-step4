@@ -12,6 +12,7 @@ export async function initQuizz(questions) {
   localStorage.clear();
   
   questionElement = document.getElementById("question");
+  questionElement.focus({ focusVisible: true });
   proposalsElement = document.getElementById("proposals");
     
   currentQuestion = 0;
@@ -61,12 +62,21 @@ async function selectAnswer(e) {
   
 async function showResult() {
   let answers = getAnswers();
-  const newAnswers = answers.map(({label, ...id}) => id)
+  const newAnswers = answers.map(({ label, ...id }) => id);
 
   score = await evaluate(newAnswers);
+  console.log(score);
 
-  quiz.innerHTML = `
-    <h1>Quizz Finis!</h1>
-    <p>Ton score: ${score}/${quizzData.length}</p>
+  const resultElement = document.getElementById("result");
+
+  resultElement.innerHTML = `
+    <h1>Quiz terminé !</h1>
+    <p>Ton score : ${score}/${quizzData.length}</p>
   `;
+
+  // Annonce immédiate au lecteur d’écran
+  resultElement.focus({ focusVisible: true });
+
+  proposalsElement.innerHTML = "";
+  questionElement.innerText = "";
 }
